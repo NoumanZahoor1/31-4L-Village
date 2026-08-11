@@ -8,8 +8,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen]       = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [scrolled, setScrolled]   = useState(false);
-  const [langOpen, setLangOpen]   = useState(false);
-  const langRef = useRef(null);
+  const [langOpen, setLangOpen]         = useState(false);
+  const [mobileLangOpen, setMobileLangOpen] = useState(false);
+  const langRef       = useRef(null);
+  const mobileLangRef = useRef(null);
 
   const navItems = [
     { id: 'home',       key: 'home' },
@@ -42,11 +44,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close lang dropdown on outside click
+  // Close lang dropdowns on outside click
   useEffect(() => {
     const handler = (e) => {
       if (langRef.current && !langRef.current.contains(e.target)) {
         setLangOpen(false);
+      }
+      if (mobileLangRef.current && !mobileLangRef.current.contains(e.target)) {
+        setMobileLangOpen(false);
       }
     };
     document.addEventListener('mousedown', handler);
@@ -135,19 +140,19 @@ export default function Navbar() {
           {/* Mobile: Language + Hamburger */}
           <div className="lg:hidden flex items-center gap-2">
             {/* Compact language switcher for mobile */}
-            <div className="relative" ref={undefined}>
+            <div className="relative" ref={mobileLangRef}>
               <button
-                onClick={() => setLangOpen(!langOpen)}
+                onClick={() => setMobileLangOpen(!mobileLangOpen)}
                 className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs font-bold"
               >
                 🌐 {currentLang.label}
               </button>
-              {langOpen && (
-                <div className="absolute right-0 mt-2 w-36 bg-brand-emerald border border-white/15 rounded-xl shadow-2xl overflow-hidden z-50">
+              {mobileLangOpen && (
+                <div className="absolute right-0 mt-2 w-36 bg-brand-emerald border border-white/15 rounded-xl shadow-2xl overflow-hidden z-[200]">
                   {LANGUAGES.map((l) => (
                     <button
                       key={l.code}
-                      onClick={() => { setLang(l.code); setLangOpen(false); }}
+                      onClick={() => { setLang(l.code); setMobileLangOpen(false); }}
                       className={`w-full text-left px-3 py-2.5 text-xs flex items-center gap-2 transition-colors ${
                         lang === l.code ? 'bg-brand-gold/20 text-brand-gold font-bold' : 'text-white/80 hover:bg-white/10 hover:text-white'
                       }`}
