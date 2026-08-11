@@ -632,6 +632,7 @@ export default function FamousPersonalities() {
                   >
                     {imgSrc ? (
                       <img
+                        loading="lazy"
                         src={imgSrc}
                         alt={get(person.name, lang)}
                         className="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105"
@@ -699,7 +700,7 @@ export default function FamousPersonalities() {
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity"
           onClick={() => setPreviewImage(null)}
         >
-          <div className="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center justify-center" onClick={e => e.stopPropagation()}>
+          <div className="relative w-full max-w-4xl mx-auto flex items-center justify-center p-4" onClick={e => e.stopPropagation()}>
             <button 
               onClick={() => setPreviewImage(null)}
               className="absolute -top-12 right-0 p-2 text-white/70 hover:text-white transition-colors"
@@ -707,9 +708,10 @@ export default function FamousPersonalities() {
               <X className="w-8 h-8" />
             </button>
             <img 
+              loading="lazy"
               src={previewImage} 
               alt="Preview" 
-              className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl ring-1 ring-white/10"
+              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
             />
           </div>
         </div>

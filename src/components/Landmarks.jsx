@@ -54,6 +54,7 @@ export default function Landmarks() {
                 onClick={() => setSelectedLandmark(landmark)}
               >
                 <img 
+                  loading="lazy"
                   src={landmark.image} 
                   alt={landmark.name} 
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover/img:scale-110"
