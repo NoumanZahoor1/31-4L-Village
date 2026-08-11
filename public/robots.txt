@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://31-4l-village.vercel.app/sitemap.xml
