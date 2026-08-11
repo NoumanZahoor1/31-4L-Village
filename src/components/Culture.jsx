@@ -10,10 +10,10 @@ const SECTION_META = [
     accent: '#064e3b',
     tag: 'Agriculture',
     images: [
-      { src: '/images/wheat.png', label: 'Wheat' },
-      { src: '/images/rice.png', label: 'Rice' },
-      { src: '/images/sugarcane.png', label: 'Sugarcane' },
-      { src: '/images/animal img.jpg', label: 'Livestock' },
+      { src: '/images/wheat.webp', label: 'Wheat' },
+      { src: '/images/rice.webp', label: 'Rice' },
+      { src: '/images/sugarcane.webp', label: 'Sugarcane' },
+      { src: '/images/animal img.webp', label: 'Livestock' },
     ],
   },
   {
@@ -21,9 +21,9 @@ const SECTION_META = [
     accent: '#92400e',
     tag: 'Cuisine',
     images: [
-      { src: '/images/makki.jpg', label: 'Makki Roti' },
-      { src: '/images/lassi.png', label: 'Lassi' },
-      { src: '/images/barfi.png', label: 'Barfi' },
+      { src: '/images/makki.webp', label: 'Makki Roti' },
+      { src: '/images/lassi.webp', label: 'Lassi' },
+      { src: '/images/barfi.webp', label: 'Barfi' },
     ],
   },
   {
@@ -31,9 +31,9 @@ const SECTION_META = [
     accent: '#1e40af',
     tag: 'Community',
     images: [
-      { src: '/images/together.jpg', label: 'Together' },
-      { src: '/images/wedding.png', label: 'Wedding' },
-      { src: '/images/citrus.png', label: 'Celebrations' },
+      { src: '/images/together.webp', label: 'Together' },
+      { src: '/images/wedding.webp', label: 'Wedding' },
+      { src: '/images/citrus.webp', label: 'Celebrations' },
     ],
   },
 ];

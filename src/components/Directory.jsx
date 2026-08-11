@@ -17,7 +17,7 @@ const personalitiesData = [
       en: 'Prominent former Numberdar of Chak 31/4L, remembered for his service, leadership, and dedication to the village community.',
       ur: 'چک 31/4L کے معروف سابق نمبردار، جنہیں گاؤں کی خدمت اور قیادت کے لیے یاد کیا جاتا ہے۔',
     },
-    image: '/images/people/lal khan.png',
+    image: '/images/people/lal khan.webp',
     achievement: { en: 'Honorary Village Leadership', ur: 'نمبردار (مرحوم)' },
   },
   {
@@ -57,7 +57,7 @@ const personalitiesData = [
       en: 'Current active Numberdar of Chak 31/4L, actively managing village revenue records and serving the local community.',
       ur: 'چک 31/4L کے موجودہ فعال نمبردار، جو گاؤں کے مالیاتی ریکارڈ اور عوامی خدمت میں مصروف ہیں۔',
     },
-    image: '/images/people/waris Numberdar.png',
+    image: '/images/people/waris Numberdar.webp',
     achievement: { en: 'Active Village Numberdar', ur: 'موجودہ نمبردار' },
   },
   {
@@ -70,7 +70,7 @@ const personalitiesData = [
       en: 'Respected active Numberdar serving Chak 31/4L with guidance, dispute resolution, and community development.',
       ur: 'محترم موجودہ نمبردار جو گاؤں میں رہنمائی، تنازعات کے حل اور ترقی کے لیے کوشاں ہیں۔',
     },
-    image: '/images/people/Hazir.png',
+    image: '/images/people/Hazir.webp',
     achievement: { en: 'Active Village Numberdar', ur: 'موجودہ نمبردار' },
   },
   {
@@ -131,35 +131,35 @@ const personalitiesData = [
 
   // Alive Notable
   { id: 201, name: { en: 'Ahmad Yar Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected prominent figure in Chak 31/4L dedicated to local community welfare.', ur: 'چک 31/4L کی محترم اور معزز شخصیت۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 202, name: { en: 'Haji Aman Ullah Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Prominent social figure and elder supporting community welfare.', ur: 'گاؤں کے معروف اور محترم سماجی رہنما۔' }, image: '/images/people/Aman ullah.jpeg', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 203, name: { en: 'Zahoor Ahmad Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active community representative playing a key role in village harmony.', ur: 'گاؤں کے فعال اور معزز نمائندے۔' }, image: '/images/people/Zahoor .png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 204, name: { en: 'Haji Talib Hussain Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected leader involved in social work and community development.', ur: 'سماجی اور فلاحی امور کے معزز رہنما۔' }, image: '/images/people/Haji talib.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 205, name: { en: 'Wazir Ali Shahid Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Dedicated community leader supporting local welfare initiatives.', ur: 'عوامی اور فلاحی کاموں کے نامور کارکن۔' }, image: '/images/people/wazir .png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 206, name: { en: 'Wajib Ali Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Esteemed member of the village taking active part in social welfare.', ur: 'گاؤں کی محترم اور فعال شخصیت۔' }, image: '/images/people/Wajib.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 207, name: { en: 'Ustad Basara Khan Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality / Master Craftsman', ur: 'معزز شخصیت / ماہر استاد' }, category: 'Alive', bio: { en: 'Renowned teacher and master figure respected across the community.', ur: 'پورے علاقے میں محترم و معروف استاد شخصیت۔' }, image: '/images/people/Ustad Basara.jpeg', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 208, name: { en: 'Usman Ghani Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active youth and community organizer in Chak 31/4L.', ur: 'برادری میں فعال اور متحرک رہنما۔' }, image: '/images/people/Usman.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 202, name: { en: 'Haji Aman Ullah Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Prominent social figure and elder supporting community welfare.', ur: 'گاؤں کے معروف اور محترم سماجی رہنما۔' }, image: '/images/people/Aman ullah.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 203, name: { en: 'Zahoor Ahmad Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active community representative playing a key role in village harmony.', ur: 'گاؤں کے فعال اور معزز نمائندے۔' }, image: '/images/people/Zahoor .webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 204, name: { en: 'Haji Talib Hussain Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected leader involved in social work and community development.', ur: 'سماجی اور فلاحی امور کے معزز رہنما۔' }, image: '/images/people/Haji talib.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 205, name: { en: 'Wazir Ali Shahid Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Dedicated community leader supporting local welfare initiatives.', ur: 'عوامی اور فلاحی کاموں کے نامور کارکن۔' }, image: '/images/people/wazir .webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 206, name: { en: 'Wajib Ali Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Esteemed member of the village taking active part in social welfare.', ur: 'گاؤں کی محترم اور فعال شخصیت۔' }, image: '/images/people/Wajib.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 207, name: { en: 'Ustad Basara Khan Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality / Master Craftsman', ur: 'معزز شخصیت / ماہر استاد' }, category: 'Alive', bio: { en: 'Renowned teacher and master figure respected across the community.', ur: 'پورے علاقے میں محترم و معروف استاد شخصیت۔' }, image: '/images/people/Ustad Basara.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 208, name: { en: 'Usman Ghani Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active youth and community organizer in Chak 31/4L.', ur: 'برادری میں فعال اور متحرک رہنما۔' }, image: '/images/people/Usman.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 209, name: { en: 'M. Ayub Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected individual actively furthering local community wellbeing.', ur: 'معزز اور فعال سماجی شخصیت۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 210, name: { en: 'Ghulam Murtaza Jatoi', ur: 'سابق نائب ناظم' }, type: 'Notable', field: { en: 'Ex Naib Nazim / Notable', ur: 'سابق نائب ناظم / معزز شخصیت' }, category: 'Alive', bio: { en: 'Former Naib Nazim who served local governance with distinction.', ur: 'سابق نائب ناظم جنہوں نے علاقے کی بہترین خدمت کی۔' }, image: null, achievement: { en: 'Ex Naib Nazim', ur: 'سابق نائب ناظم' } },
   { id: 211, name: { en: 'Mohsin Ali Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Dynamic representative engaged in local youth and social projects.', ur: 'نوجوان سماجی و فلاحی نمائندے۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 212, name: { en: 'Shahid Abbas Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected figure known for social development contributions.', ur: 'علاقائی ترقی کے سرگرم کارکن۔' }, image: '/images/people/Shahid Abbas.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 213, name: { en: 'M. Aslam Sikandar Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Prominent personality active in village administration and unity.', ur: 'گاؤں میں اتحاد اور باہمی تعاون کے داعی۔' }, image: '/images/people/Aslam Jatoi.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 212, name: { en: 'Shahid Abbas Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected figure known for social development contributions.', ur: 'علاقائی ترقی کے سرگرم کارکن۔' }, image: '/images/people/Shahid Abbas.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 213, name: { en: 'M. Aslam Sikandar Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Prominent personality active in village administration and unity.', ur: 'گاؤں میں اتحاد اور باہمی تعاون کے داعی۔' }, image: '/images/people/Aslam Jatoi.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 214, name: { en: 'Arshad Bashir Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Key local figure dedicated to progressive social works.', ur: 'سماجی اور فلاحی میدان کی نمایاں شخصیت۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 215, name: { en: 'Aslam Lashari', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected community leader contributing to peace and resolution.', ur: 'فلاح و بہبود کے میدان کے معزز رکن۔' }, image: '/images/people/Aslam Lashari.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 216, name: { en: 'Ajmal Lashari', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active community personality working for collective growth.', ur: 'عوامی ترقی و فلاح کے کوشاں کارکن۔' }, image: '/images/people/Ajmal.jpeg', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 217, name: { en: 'Qadir Khan Lashari', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Esteemed elder supporting village harmony and local affairs.', ur: 'علاقائی ہم آہنگی کے پُرخلوص رہنما۔' }, image: '/images/people/Qadir.jpeg', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 215, name: { en: 'Aslam Lashari', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected community leader contributing to peace and resolution.', ur: 'فلاح و بہبود کے میدان کے معزز رکن۔' }, image: '/images/people/Aslam Lashari.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 216, name: { en: 'Ajmal Lashari', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active community personality working for collective growth.', ur: 'عوامی ترقی و فلاح کے کوشاں کارکن۔' }, image: '/images/people/Ajmal.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 217, name: { en: 'Qadir Khan Lashari', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Esteemed elder supporting village harmony and local affairs.', ur: 'علاقائی ہم آہنگی کے پُرخلوص رہنما۔' }, image: '/images/people/Qadir.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 218, name: { en: 'Abbas Sharif Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected individual actively supporting local initiatives.', ur: 'معزز اور سرگرم سماجی رکن۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 219, name: { en: 'Noor Nabi Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Dedicated village figure engaged in welfare and development.', ur: 'فلاحی اور ترقیاتی کاموں میں مصروف عمل شخصیت۔' }, image: '/images/people/noor nabi.png', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 219, name: { en: 'Noor Nabi Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Dedicated village figure engaged in welfare and development.', ur: 'فلاحی اور ترقیاتی کاموں میں مصروف عمل شخصیت۔' }, image: '/images/people/noor nabi.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 220, name: { en: 'Usman Ghani Jatoi Secretary', ur: 'کمیونٹی سیکرٹری' }, type: 'Notable', field: { en: 'Secretary / Notable', ur: 'سیکرٹری / معزز شخصیت' }, category: 'Alive', bio: { en: 'Community Secretary managing civic and welfare coordination.', ur: 'سیکرٹری جو برادری اور فلاحی کاموں کے منتظم ہیں۔' }, image: null, achievement: { en: 'Community Secretary', ur: 'کمیونٹی سیکرٹری' } },
   { id: 221, name: { en: 'M. Ikram Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Young energetic leader focused on social and economic growth.', ur: 'نوجوان فعال اور متحرک سماجی شخصیت۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 222, name: { en: 'Kernel Rtd Zafar Iqbal Jatoi', ur: 'کرنل (ریٹائرڈ)' }, type: 'Notable', field: { en: 'Kernel (Rtd) / Notable', ur: 'کرنل (ریٹائرڈ) / معزز شخصیت' }, category: 'Alive', bio: { en: 'Distinguished retired Army Colonel serving as a proud representative and elder of Chak 31/4L.', ur: 'پاک فوج کے ریٹائرڈ کرنل جن کی خدمات گاؤں کے لیے باعثِ فخر ہیں۔' }, image: null, achievement: { en: 'Kernel (Rtd) — Military Service', ur: 'کرنل (ریٹائرڈ)' } },
-  { id: 223, name: { en: 'Zeeshan Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active young leader involved in community welfare and development.', ur: 'علاقائی فلاح و ترقی میں مصروف عمل متحرک شخصیت۔' }, image: '/images/people/zeeshan.jpeg', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 223, name: { en: 'Zeeshan Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active young leader involved in community welfare and development.', ur: 'علاقائی فلاح و ترقی میں مصروف عمل متحرک شخصیت۔' }, image: '/images/people/zeeshan.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 224, name: { en: 'Naeem Ashraf Jatoi', ur: 'معزز شخصیت' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected member contributing actively to social initiatives.', ur: 'سماجی اور فلاحی کاموں کے معزز و سرگرم رکن۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
 
 
-  { id: 225, name: { en: 'Assistant Sub Inspector Tanveer', ur: 'اسسٹنٹ سب انسپکٹر' }, type: 'Police', field: { en: 'Assistant Sub Inspector (Alive)', ur: 'اسسٹنٹ سب انسپکٹر (حیات)' }, category: 'Alive', bio: { en: 'Committed ASI serving efficiently in police department administration and crime prevention.', ur: 'پولیس محکمے میں فرض شناسی سے خدمات انجام دینے والے اسسٹنٹ سب انسپکٹر۔' }, image: '/images/people/Tanveer.jpeg', achievement: { en: 'Assistant Sub Inspector', ur: 'اسسٹنٹ سب انسپکٹر' } },
-  { id: 226, name: { en: 'Fakhar', ur: 'ایڈوکیٹ' }, type: 'Advocate', field: { en: 'Legal Practitioner / Advocate', ur: 'قانون دان / ایڈوکیٹ' }, category: 'Alive', bio: { en: 'Respected Advocate dedicated to legal welfare.', ur: 'معزز قانون دان۔' }, image: '/images/people/Fakhar.png', achievement: { en: 'Advocate / Lawyer', ur: 'ایڈوکیٹ' } },
-  { id: 227, name: { en: 'Fateh Sher', ur: 'پولیس اہلکار' }, type: 'Police', field: { en: 'Police Department (Alive)', ur: 'پولیس محکمہ کے باہمت اہلکار' }, category: 'Alive', bio: { en: 'Respected Police officer serving the community.', ur: 'فرض شناس پولیس اہلکار۔' }, image: '/images/people/Fateh Sher.png', achievement: { en: 'Police Department', ur: 'پولیس اہلکار' } },
-  { id: 504, name: { en: 'Dr. Bashir', ur: 'میڈیکل ڈاکٹر' }, type: 'Doctor', field: { en: 'Medical Doctor', ur: 'میڈیکل ڈاکٹر' }, category: 'Alive', bio: { en: 'Dedicated medical doctor serving local patients.', ur: 'علاج و معالجے کے میدان میں بہترین خدمات انجام دینے والے ڈاکٹر۔' }, image: '/images/people/Dr Bashir.png', achievement: { en: 'Medical Practitioner', ur: 'طبی ماہر' } },
+  { id: 225, name: { en: 'Assistant Sub Inspector Tanveer', ur: 'اسسٹنٹ سب انسپکٹر' }, type: 'Police', field: { en: 'Assistant Sub Inspector (Alive)', ur: 'اسسٹنٹ سب انسپکٹر (حیات)' }, category: 'Alive', bio: { en: 'Committed ASI serving efficiently in police department administration and crime prevention.', ur: 'پولیس محکمے میں فرض شناسی سے خدمات انجام دینے والے اسسٹنٹ سب انسپکٹر۔' }, image: '/images/people/Tanveer.webp', achievement: { en: 'Assistant Sub Inspector', ur: 'اسسٹنٹ سب انسپکٹر' } },
+  { id: 226, name: { en: 'Fakhar', ur: 'ایڈوکیٹ' }, type: 'Advocate', field: { en: 'Legal Practitioner / Advocate', ur: 'قانون دان / ایڈوکیٹ' }, category: 'Alive', bio: { en: 'Respected Advocate dedicated to legal welfare.', ur: 'معزز قانون دان۔' }, image: '/images/people/Fakhar.webp', achievement: { en: 'Advocate / Lawyer', ur: 'ایڈوکیٹ' } },
+  { id: 227, name: { en: 'Fateh Sher', ur: 'پولیس اہلکار' }, type: 'Police', field: { en: 'Police Department (Alive)', ur: 'پولیس محکمہ کے باہمت اہلکار' }, category: 'Alive', bio: { en: 'Respected Police officer serving the community.', ur: 'فرض شناس پولیس اہلکار۔' }, image: '/images/people/Fateh Sher.webp', achievement: { en: 'Police Department', ur: 'پولیس اہلکار' } },
+  { id: 504, name: { en: 'Dr. Bashir', ur: 'میڈیکل ڈاکٹر' }, type: 'Doctor', field: { en: 'Medical Doctor', ur: 'میڈیکل ڈاکٹر' }, category: 'Alive', bio: { en: 'Dedicated medical doctor serving local patients.', ur: 'علاج و معالجے کے میدان میں بہترین خدمات انجام دینے والے ڈاکٹر۔' }, image: '/images/people/Dr Bashir.webp', achievement: { en: 'Medical Practitioner', ur: 'طبی ماہر' } },
   // ================= POLICE =================
   // Martyr (Shaheed) Police
   {
@@ -172,7 +172,7 @@ const personalitiesData = [
       en: 'Brave Police officer from Chak 31/4L who sacrificed his life in the line of duty, bringing immense honor to the nation and village.',
       ur: 'چک 31/4L کے بہادر پولیس افسر جنہوں نے ڈیوٹی کے دوران جان قربان کرکے قوم اور گاؤں کا سر فخر سے بلند کیا۔',
     },
-    image: '/images/people/Naeem Shaheed.png',
+    image: '/images/people/Naeem Shaheed.webp',
     achievement: { en: 'Police Department Martyr (Shaheed)', ur: 'پولیس شہید' },
   },
   {
@@ -213,7 +213,7 @@ const personalitiesData = [
       en: 'Prominent Police Inspector serving with integrity, dedication, and law enforcement excellence.',
       ur: 'نمایاں پولیس انسپکٹر جو دیانتداری اور فرض شناسی کے ساتھ خدمات انجام دے رہے ہیں۔',
     },
-    image: '/images/people/Sadat.png',
+    image: '/images/people/Sadat.webp',
     achievement: { en: 'Police Inspector', ur: 'پولیس انسپکٹر' },
   },
   {
@@ -226,7 +226,7 @@ const personalitiesData = [
       en: 'Senior Police Inspector serving the country with honor, duty, and leadership in police operations.',
       ur: 'سینئر پولیس انسپکٹر جو پولیس آپریشنز میں عزت اور فرض شناسی کے ساتھ ملک کی خدمت کر رہے ہیں۔',
     },
-    image: '/images/people/Afzal jatoi.png',
+    image: '/images/people/Afzal jatoi.webp',
     achievement: { en: 'Police Inspector', ur: 'پولیس انسپکٹر' },
   },
   {
@@ -239,7 +239,7 @@ const personalitiesData = [
       en: 'Dedicated Sub Inspector serving in law enforcement and representing Chak 31/4L with dignity.',
       ur: 'قانون نافذ کرنے والے ادارے میں خدمات انجام دینے والے سرشار سب انسپکٹر جو وقار کے ساتھ نمائندگی کر رہے ہیں۔',
     },
-    image: '/images/people/Ajmal.jpeg',
+    image: '/images/people/Ajmal.webp',
     achievement: { en: 'Sub Inspector Police', ur: 'سب انسپکٹر' },
   },
   {
@@ -252,7 +252,7 @@ const personalitiesData = [
       en: 'Experienced Sub Inspector active in police service and community security.',
       ur: 'تجربہ کار سب انسپکٹر جو پولیس سروس اور کمیونٹی کی حفاظت میں سرگرم ہیں۔',
     },
-    image: '/images/people/Riffat.png',
+    image: '/images/people/Riffat.webp',
     achievement: { en: 'Sub Inspector Police', ur: 'سب انسپکٹر' },
   },
   // ================= TEACHERS =================
@@ -266,7 +266,7 @@ const personalitiesData = [
       en: 'Distinguished educator and School Principal from Chak 31/4L dedicated to shaping future generations.',
       ur: 'چک 31/4L کے نامور ماہر تعلیم اور سکول پرنسپل جو آنے والی نسلوں کی تعمیر کے لیے وقف ہیں۔',
     },
-    image: '/images/people/israr.png',
+    image: '/images/people/israr.webp',
     achievement: { en: 'School Principal', ur: 'سکول پرنسپل' },
   },
   {
@@ -292,7 +292,7 @@ const personalitiesData = [
       en: 'Eminent scholar and Head of Department (HOD) at UET Lahore, bringing great pride and academic prestige to the village.',
       ur: 'UET لاہور میں نامور سکالر اور ہیڈ آف ڈیپارٹمنٹ، جو گاؤں کے لیے باعث فخر ہیں۔',
     },
-    image: '/images/people/wassem.jpeg',
+    image: '/images/people/wassem.webp',
     achievement: { en: 'HOD — UET Lahore', ur: 'پروفیسر' },
   },
   {
@@ -305,7 +305,7 @@ const personalitiesData = [
       en: 'Dedicated teacher rendering valuable educational services to local students and the community.',
       ur: 'مقامی تعلیمی ترقی اور کمیونٹی کی تدریس کے لیے کوشاں محترم شخصیت۔',
     },
-    image: '/images/people/Master Abbas.png',
+    image: '/images/people/Master Abbas.webp',
     achievement: { en: 'Education Service', ur: 'ماہر تعلیم' },
   },
   {
@@ -331,7 +331,7 @@ const personalitiesData = [
       en: 'Veteran teacher who has devoted years to fostering knowledge and discipline.',
       ur: 'اعلیٰ تعلیم فراہم کرنے والے محترم لیکچرر اور ماہر تعلیم۔',
     },
-    image: '/images/people/Bashir Ahmad.png',
+    image: '/images/people/Bashir Ahmad.webp',
     achievement: { en: 'Education Service', ur: 'لیکچرر' },
   },
   {
@@ -384,7 +384,7 @@ const personalitiesData = [
       en: 'Respected medical practitioner from Chak 31/4L rendering vital healthcare services.',
       ur: 'صحتِ عامہ اور مریضوں کی فلاح کے لیے وقف ڈاکٹر۔',
     },
-    image: '/images/people/Sami ullah.png',
+    image: '/images/people/Sami ullah.webp',
     achievement: { en: 'Medical Practitioner', ur: 'میڈیکل ڈاکٹر' },
   },
   {
@@ -397,7 +397,7 @@ const personalitiesData = [
       en: 'Dedicated medical doctor serving local patients with professional medical care.',
       ur: 'چک 31/4L کے رہائشیوں کو صحت کی دیکھ بھال فراہم کرنے والے فعال طبی ماہر۔',
     },
-    image: '/images/people/Jalal.jpeg',
+    image: '/images/people/Jalal.webp',
     achievement: { en: 'Medical Specialist', ur: 'میڈیکل ڈاکٹر' },
   },
   // ================= ADVOCATES =================
@@ -450,7 +450,7 @@ const personalitiesData = [
       en: 'Young dedicated Advocate serving the judicial system with integrity.',
       ur: 'نوجوان ایڈوکیٹ جو کمیونٹی میں قانونی خدمات انجام دے رہے ہیں۔',
     },
-    image: '/images/people/umer fayyaz.png',
+    image: '/images/people/umer fayyaz.webp',
     achievement: { en: 'Advocate / Lawyer', ur: 'ایڈوکیٹ' },
   },
     {
@@ -463,7 +463,7 @@ const personalitiesData = [
       en: 'Esteemed Advocate representing client rights and community legal welfare.',
       ur: 'عوامی مسائل اور قانونی انصاف کی فراہمی میں مصروف عمل معزز ایڈوکیٹ۔',
     },
-    image: '/images/people/Iqrar.png',
+    image: '/images/people/Iqrar.webp',
     achievement: { en: 'Advocate / Lawyer', ur: 'ایڈوکیٹ' },
   },
 ];

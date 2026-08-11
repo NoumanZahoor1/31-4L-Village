@@ -42,10 +42,10 @@ export const villageCulture = {
       text: "Farming is not only the source of income; many people are in government jobs like police officers, teachers, army officers, and the health department. Villagers grow wheat, rice, maize, potatoes, and sugarcane using water from the local canal system. Many families also raise animals like Sahiwal cows and Nili-Ravi buffaloes for milk and dairy.",
       subtext: "A typical day starts early with morning prayers, followed by work in the fields or with the animals. Afternoons are for rest, and evenings bring people together to relax and talk as the weather cools down.",
       gallery: [
-        { label: "Wheat Crop", src: "/images/wheat.png" },
-        { label: "Rice Crop", src: "/images/rice.png" },
-        { label: "Sugarcane", src: "/images/sugarcane.png" },
-        { label: "Livestock", src: "/images/animal img.jpg" }
+        { label: "Wheat Crop", src: "/images/wheat.webp" },
+        { label: "Rice Crop", src: "/images/rice.webp" },
+        { label: "Sugarcane", src: "/images/sugarcane.webp" },
+        { label: "Livestock", src: "/images/animal img.webp" }
       ]
     },
     {
@@ -53,9 +53,9 @@ export const villageCulture = {
       text: "Meals here are fresh and homemade —- milk, desi butter (makhan), lassi, saag (mustard greens), and makki di roti (corn flatbread) are everyday favorites. Our village is also famous for its barfi, a traditional sweet loved by locals and visitors alike.",
       subtext: "Punjabi is the main language spoken. Men often wear shalwar kameez with a chaddar, while women wear shalwar kameez with colorful dupattas.",
       gallery: [
-        { label: "Makki Roti", src: "/images/makki.jpg" },
-        { label: "Lassi", src: "/images/lassi.png" },
-        { label: "Barfi", src: "/images/barfi.png" }
+        { label: "Makki Roti", src: "/images/makki.webp" },
+        { label: "Lassi", src: "/images/lassi.webp" },
+        { label: "Barfi", src: "/images/barfi.webp" }
       ]
     },
     {
@@ -63,9 +63,9 @@ export const villageCulture = {
       text: "People here believe in helping each other. Weddings, celebrations, and even disagreements are handled together as a community.",
       subtext: "Important affairs or issues are often guided by respected elders through informal gatherings (panchayat-style discussions) to maintain local peace and harmony.",
       gallery: [
-        { label: "Chaupal", src: "/images/chaupal.png" },
-        { label: "Panchayat", src: "/images/chaupal.png" },
-        { label: "Celebrations", src: "/images/hero.png" }
+        { label: "Chaupal", src: "/images/chaupal.webp" },
+        { label: "Panchayat", src: "/images/chaupal.webp" },
+        { label: "Celebrations", src: "/images/hero.webp" }
       ]
     }
   ],
@@ -103,28 +103,28 @@ export const placeLandmarks = [
     name: "Jamia Masjid Siddique E Akbar (R.A)",
     category: "Heritage",
     description: "The first and main masjid of our village, built more than 30 years ago, serving as the central spiritual heart of the community.",
-    image: "/images/Masjid.PNG"
+    image: "/images/Masjid.webp"
   },
   {
     id: 2,
     name: "Bahr Wala Chowk",
     category: "Community",
     description: "The main crossroads and heartbeat of our village - connecting Depalpur Road (East), Sahiwal Road (West), Okara Road (North), and Pakpattan Road (South). Home to food stalls, a snooker club, motorcycle repair shops, milk vendors, barbershops, and a beautiful mosque at its heart.",
-    image: "/images/bahr.jpg"
+    image: "/images/bahr.webp"
   },
   {
     id: 3,
     name: "LBDC Distributary Bridge",
     category: "Scenic",
     description: "A popular evening spot overlooking the fast-flowing canal distributary, where youths gather to enjoy the cool breeze and sunset views.",
-    image: "/images/hero.png"
+    image: "/images/hero.webp"
   },
   {
     id: 4,
     name: "Government Boys Middle School",
     category: "Education",
     description: "This is the one and only government middle school for boys. In the past, the boys went to different villages for studies, but now they can study at their own village school. Children come daily to study, learn and play. There is also a ground for children to play. Students from different villages also come to study. This school also encourages the children to come and study.",
-    image: "/images/boys school.png"
+    image: "/images/boys school.webp"
   }
 ];
 
@@ -225,42 +225,42 @@ export const galleryItems = [
     category: "culture",
     title: "Streets During Mela",
     description: "The village streets come alive during the annual Urs Mela — families, children and visitors from neighbouring villages pour in, filling every lane with colour, laughter and festive energy. Stalls line the roads, music fills the air, and the whole community gathers to celebrate faith and togetherness in true Punjabi spirit.",
-    image: "/images/streets during Mela.jpeg"
+    image: "/images/streets during Mela.webp"
   },
   {
     id: 2,
     category: "farming",
     title: "Wheat Fields",
     description: "Golden ripe wheat fields swaying under the bright April Punjab sun before harvest.",
-    image: "/images/hero.png"
+    image: "/images/hero.webp"
   },
   {
     id: 3,
     category: "culture",
     title: "Chaupal Gathering",
     description: "Elders chatting over hot tea under the historic Banyan tree in the cool evening.",
-    image: "/images/chaupal.png"
+    image: "/images/chaupal.webp"
   },
   {
     id: 4,
     category: "culture",
     title: "Kabaddi During Mela",
     description: "One of the most thrilling highlights of our annual Mela — a fierce Kabaddi match played on the village ground with teams from our own chak and neighbouring villages. Crowds gather on all sides, cheering at the top of their lungs as players raid and wrestle in the ancient tradition of this beloved Punjabi sport. Raw strength, quick reflexes, and pure team spirit — Kabaddi at the Mela is an experience like no other.",
-    image: "/images/Kabbadi during Mela.jpeg"
+    image: "/images/Kabbadi during Mela.webp"
   },
   {
     id: 5,
     category: "culture",
     title: "Kabaddi Warm-up",
     description: "Local athletes prepping on the clay court ahead of the village championship.",
-    image: "/images/hero.png"
+    image: "/images/hero.webp"
   },
   {
     id: 6,
     category: "landmarks",
     title: "Jamia Masjid Siddique E Akbar (R.A)",
     description: "The elegant minaret and dome of the village's main and first masjid, standing for over 30 years.",
-    image: "/images/Masjid.PNG"
+    image: "/images/Masjid.webp"
   },
   {
     id: 7,
@@ -269,7 +269,7 @@ export const galleryItems = [
     title: "Bull Plowing in the Field",
     description: "The bull is plowing the agricultural field using traditional Punjabi farming methods.",
     video: "/videos/1.MOV",
-    image: "/images/bull.jpg"
+    image: "/images/bull.webp"
   },
   {
     id: 8,
@@ -278,7 +278,7 @@ export const galleryItems = [
     title: "Rice Paddy Plantation",
     description: "Rice is planted in the paddy field during the monsoon farming season.",
     video: "/videos/2.MOV",
-    image: "/images/rice.png"
+    image: "/images/rice.webp"
   },
   {
     id: 9,
@@ -287,6 +287,6 @@ export const galleryItems = [
     title: "Children Playing on Jumping Jhoola",
     description: "Village children having fun and playing on the jumping Jhoola in the local gathering.",
     video: "/videos/3.MOV",
-    image: "/images/children playing.png"
+    image: "/images/children playing.webp"
   }
 ];

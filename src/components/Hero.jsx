@@ -37,7 +37,7 @@ export default function Hero() {
       {/* Background with Dark Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0 scale-105 animate-[pulse_10s_ease-in-out_infinite]"
-        style={{ backgroundImage: "url('/images/hero.png')" }}
+        style={{ backgroundImage: "url('/images/hero.webp')" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-brand-emerald/75 to-brand-emerald/95 z-10" />
 
