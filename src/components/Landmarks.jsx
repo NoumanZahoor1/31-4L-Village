@@ -85,7 +85,7 @@ export default function Landmarks() {
                   <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-brand-emerald transition-colors">
                     {landmark.name}
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 text-sm leading-relaxed mb-6 whitespace-pre-line">
                     {landmark.description}
                   </p>
                 </div>

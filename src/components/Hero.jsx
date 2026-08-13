@@ -15,6 +15,34 @@ export default function Hero() {
     'Caste':        get(t.hero.caste, lang),
   };
 
+  const localStats = [
+    {
+      label: 'Population',
+      value: { en: 'Expected 4,000', ur: 'تقریباً 4000 افراد' },
+      description: { en: 'According to latest local survey', ur: 'تازہ ترین مقامی سروے کے مطابق' },
+    },
+    {
+      label: 'Main District',
+      value: { en: 'Okara', ur: 'اوکاڑہ' },
+      description: { en: 'Land of Agriculture & Dairy', ur: 'زراعت اور ڈیری کی سرزمین' },
+    },
+    {
+      label: 'Primary Crops',
+      value: { en: 'Potato, Wheat, Rice, Corn, Sugarcane', ur: 'آلو، گندم، چاول، مکئی، گنا' },
+      description: { en: 'Top agricultural exports', ur: 'اہم زرعی پیداوار' },
+    },
+    {
+      label: 'Literacy Rate',
+      value: { en: '> 80%', ur: '٪۸۰ سے زائد' },
+      description: { en: 'Highly active school enrollment', ur: 'بہت زیادہ اسکول داخلہ' },
+    },
+    {
+      label: 'Caste',
+      value: { en: 'Baloch', ur: 'بلوچ' },
+      description: { en: 'Main community of the village', ur: 'گاؤں کی مرکزی برادری' },
+    },
+  ];
+
   const getIcon = (label) => {
     switch (label) {
       case 'Population':    return <Users className="h-6 w-6 text-brand-gold" />;
@@ -47,7 +75,9 @@ export default function Hero() {
           {get(t.hero.subtitle, lang)}
         </span>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 drop-shadow-xl animate-slide-up">
-          Welcome to <span className="text-brand-gold italic">Chak 31/4L</span>
+          {lang === 'ur'
+            ? <>چک 31/4L میں <span className="text-brand-gold italic">خوش آمدید</span></>
+            : <>Welcome to <span className="text-brand-gold italic">Chak 31/4L</span></>}
         </h1>
         <p className="text-lg md:text-2xl text-white/90 font-light max-w-3xl mb-12 leading-relaxed drop-shadow-md">
           {get(t.hero.tagline, lang)}
@@ -73,7 +103,7 @@ export default function Hero() {
       {/* Stats Bar */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 p-6 glass rounded-3xl border border-white/10 shadow-2xl text-gray-800">
-          {villageStats.stats.map((stat, idx) => (
+          {localStats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center p-4 border-r last:border-r-0 border-gray-200/50 lg:block lg:text-left">
               <div className="flex items-center space-x-3 mb-2 justify-center lg:justify-start">
                 <div className="p-2 rounded-xl bg-brand-emerald/10">
@@ -85,10 +115,10 @@ export default function Hero() {
               </div>
               <div className="text-center lg:text-left">
                 <span className="text-2xl sm:text-3xl font-bold font-serif text-brand-emerald block">
-                  {stat.value}
+                  {get(stat.value, lang)}
                 </span>
                 <span className="text-[11px] text-gray-400">
-                  {stat.description}
+                  {get(stat.description, lang)}
                 </span>
               </div>
             </div>

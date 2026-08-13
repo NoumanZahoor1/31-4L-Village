@@ -114,10 +114,10 @@ export const placeLandmarks = [
   },
   {
     id: 3,
-    name: "LBDC Distributary Bridge",
-    category: "Scenic",
-    description: "A popular evening spot overlooking the fast-flowing canal distributary, where youths gather to enjoy the cool breeze and sunset views.",
-    image: "/images/hero.webp"
+    name: "Government Girls Primary School",
+    category: "Education",
+    description: "The primary educational institution for girls in our village, fostering a supportive environment for learning, growth, and empowerment of the next generation.",
+    image: "/images/girls school.webp"
   },
   {
     id: 4,
@@ -125,6 +125,20 @@ export const placeLandmarks = [
     category: "Education",
     description: "This is the one and only government middle school for boys. In the past, the boys went to different villages for studies, but now they can study at their own village school. Children come daily to study, learn and play. There is also a ground for children to play. Students from different villages also come to study. This school also encourages the children to come and study.",
     image: "/images/boys school.webp"
+  },
+  {
+    id: 5,
+    name: "Baba Dhunni Baloch",
+    category: "Heritage",
+    description: "Before Akhtarabad existed, our people lived in a small settlement on the eastern (mashriq) side of Okara city. According to oral tradition, an elderly shepherd named Baba Dhunni Baloch once grazed his animals near the village. One day, an animal wandered onto the nearby railway track just as a train was approaching — and at that very moment, Baba Dhunni was engaged in namaz nearby. The train came to a halt before reaching the animal.\n\nWhile some believed the train stopped simply because of the animal, others believed it was due to the old man's prayer at that very moment. Word of the incident reached the British administration, who named the railway station after him — \"Dhunni Wala.\" Over time, the settlement grew and was eventually renamed Akhtarabad.\n\nThis is the story of the righteous people of our village — a tale of faith, humility, and quiet devotion.\n\n(Note: This account has been passed down by our elders through oral tradition. Its historical accuracy cannot be verified — only Allah Almighty knows the truth.)",
+    image: "/images/baba dhunni.webp"
+  },
+  {
+    id: 6,
+    name: "Healthcare Facilities",
+    category: "Health",
+    description: "The village is home to a Basic Health Unit (BHU) that provides essential medical care to local residents. While modest in scale, this facility plays a vital role in the daily lives of the community, offering treatment for common ailments and minor health issues without requiring residents to travel to the city.\n\nFor routine check-ups, minor injuries, and everyday health concerns, villagers rely on this local facility as their first point of care. Though basic in its resources, the hospital remains an essential and much-valued institution — offering timely relief and accessible healthcare to the people of Kori Balocha Wala 31/4L.",
+    image: "/images/hospital.webp"
   }
 ];
 
@@ -288,5 +302,12 @@ export const galleryItems = [
     description: "Village children having fun and playing on the jumping Jhoola in the local gathering.",
     video: "/videos/3.MOV",
     image: "/images/children playing.webp"
+  },
+  {
+    id: 10,
+    category: "culture",
+    title: "Village Street",
+    description: "A peaceful view of a typical street in our village, reflecting the simple and serene daily life of Chak 31/4L.",
+    image: "/images/street.webp"
   }
 ];

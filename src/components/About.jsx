@@ -12,7 +12,7 @@ import { useLang } from '../context/LanguageContext';
 const sectionTag     = { en: 'Heritage & Geography', ur: 'وراثت اور جغرافیہ' };
 const headingText    = { en: 'The Story & Geography of Chak 31/4-L', ur: 'چک \u200E31/4-L\u200E کی داستان اور جغرافیہ' };
 const subHeadingText = { en: 'A name rooted in struggle, memory, and an enduring village heritage in Okara, Punjab.', ur: 'ایک ایسا نام جس کی جڑیں جدوجہد، یادداشت اور اوکاڑہ، پنجاب کی وراثت میں پیوست ہیں۔' };
-const storyIntro     = { en: 'The Story Behind the Name Kori Baloch', ur: 'کوری بلوچ نام کے پیچھے کی کہانی' };
+const storyIntro     = { en: 'The Story Behind the Name Kori Baloch', ur: 'کوڑی بلوچ نام کے پیچھے کی کہانی' };
 
 // Four narrative chapters
 const chapters = {

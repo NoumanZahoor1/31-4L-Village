@@ -213,7 +213,7 @@ export default function Culture() {
 
                 {/* Urs Names highlight pills — translated */}
                 <div className="flex flex-wrap gap-2 my-0.5">
-                  {[get(t.culture.urs1, lang), get(t.culture.urs2, lang)].map((name, i) => (
+                  {[get(t.culture.urs1, lang), get(t.culture.urs2, lang), get(t.culture.urs3, lang)].map((name, i) => (
                     <span key={i} className="px-3 py-1.5 rounded-lg bg-brand-gold/25 border border-brand-gold/50 text-amber-200 text-xs font-bold shadow-sm flex items-center gap-1.5">
                       <span className="text-brand-gold text-sm">✦</span> {name}
                     </span>

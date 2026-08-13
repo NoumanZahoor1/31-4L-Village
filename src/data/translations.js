@@ -68,8 +68,9 @@ export const t = {
     annualCal:        { en: 'Annual Village Calendar', ur: 'سالانہ دیہی کیلنڈر' },
     urs1:             { en: 'Urs Baba Suba Sadiq Shah Mela', ur: 'عرس بابا صوبہ صادق شاہ میلہ' },
     urs2:             { en: 'Urs Baba Ahmad Shah', ur: 'عرس بابا احمد شاہ' },
+    urs3:             { en: 'Urs Baba Dhunni', ur: 'عرس بابا دھنی' },
 
-    festPara1:  { en: 'Our village celebrates two special urs (spiritual gatherings) every year in honor of local saints – Urs Baba Suba Sadiq Shah Mela and Urs Baba Ahmad Shah. These are the biggest events on our village calendar, drawing residents and visitors from nearby areas alike.', ur: 'ہمارا گاؤں ہر سال دو خصوصی عرس مناتا ہے — عرس بابا صوبہ صادق شاہ میلہ اور عرس بابا احمد شاہ۔ یہ ہمارے سالانہ کیلنڈر کے سب سے بڑے ایونٹس ہیں۔' },
+    festPara1:  { en: 'Our village celebrates three special urs (spiritual gatherings) every year in honor of local saints – Urs Baba Suba Sadiq Shah Mela, Urs Baba Ahmad Shah, and Urs Baba Dhunni. These are the biggest events on our village calendar, drawing residents and visitors from nearby areas alike.', ur: 'ہمارا گاؤں ہر سال تین خصوصی عرس مناتا ہے — عرس بابا صوبہ صادق شاہ میلہ، عرس بابا احمد شاہ، اور عرس بابا دھنی۔ یہ ہمارے سالانہ کیلنڈر کے سب سے بڑے ایونٹس ہیں۔' },
     festPara2:  { en: 'The celebrations feature traditional Qawwali music and Dhamaal, along with free community food (Langar) served to everyone who attends – a tradition of hospitality and sharing that defines our village spirit.', ur: 'تقریبات میں قوالی، دھمال اور سب کے لیے مفت لنگر شامل ہوتا ہے — مہمان نوازی اور بانٹ کر کھانے کی روایت ہمارے گاؤں کی پہچان ہے۔' },
     festPara3:  { en: 'Alongside the spiritual gatherings, the mela comes alive with local sports and cultural activities:', ur: 'روحانی اجتماعات کے ساتھ ساتھ میلے میں مقامی کھیل اور ثقافتی سرگرمیاں بھی ہوتی ہیں:' },
 
@@ -81,9 +82,9 @@ export const t = {
 
     dailyLife:   { en: 'Youth & Recreation', ur: 'نوجوان اور کھیل' },
     sportsPara1: { en: 'Beyond the mela season, sports are a big part of everyday life here. Cricket and football are the most loved games among the youth, with friendly matches often played on open fields in the evenings.', ur: 'میلے کے موسم کے علاوہ بھی کھیل یہاں کی روزمرہ زندگی کا اہم حصہ ہے۔ کرکٹ اور فٹ بال نوجوانوں میں سب سے زیادہ پسند کیے جاتے ہیں۔' },
-    sportsPara2: { en: 'Cricket holds a special place in our village – every year, local teams compete in the Kori Premier League (KPL), our very own cricket tournament that brings out fierce team spirit and excitement across the whole community.', ur: 'کرکٹ کو ہمارے گاؤں میں خاص مقام حاصل ہے — ہر سال کوری پریمیئر لیگ (KPL) کا انعقاد ہوتا ہے جو پوری برادری میں جوش و خروش اور دیہی فخر بھر دیتا ہے۔' },
+    sportsPara2: { en: 'Cricket holds a special place in our village – every year, local teams compete in the Kori Premier League (KPL), our very own cricket tournament that brings out fierce team spirit and excitement across the whole community.', ur: 'کرکٹ کو ہمارے گاؤں میں خاص مقام حاصل ہے — ہر سال کوڑی پریمیئر لیگ (KPL) کا انعقاد ہوتا ہے جو پوری برادری میں جوش و خروش اور دیہی فخر بھر دیتا ہے۔' },
 
-    kplTitle:   { en: 'Kori Premier League (KPL)', ur: 'کوری پریمیئر لیگ (KPL)' },
+    kplTitle:   { en: 'Kori Premier League (KPL)', ur: 'کوڑی پریمیئر لیگ (KPL)' },
     kplDesc:    { en: "Our village's annual cricket tournament bringing out intense team rivalry, sportsmanship, and village pride across all age groups.", ur: 'ہمارے گاؤں کا سالانہ کرکٹ ٹورنامنٹ جو تمام عمر کے لوگوں میں جوش، کھیل کا جذبہ اور دیہی فخر پیدا کرتا ہے۔' },
 
     chipCricket:  { en: 'Cricket', ur: 'کرکٹ' },
@@ -171,9 +172,9 @@ export const t = {
       },
       {
         id: 3,
-        category: { en: 'Scenic', ur: 'قدرتی نظارہ' },
-        name: { en: 'LBDC Distributary Bridge', ur: 'لوئر باری دوآب نہر کا پل' },
-        description: { en: 'A popular evening spot overlooking the fast-flowing canal distributary, where youths gather to enjoy the cool breeze and sunset views.', ur: 'تیز بہتی نہر پر بنا یہ پل شام کے وقت ایک مقبول جگہ ہے، جہاں نوجوان ٹھنڈی ہوا اور غروب آفتاب کے نظاروں سے لطف اندوز ہوتے ہیں۔' }
+        category: { en: 'Education', ur: 'تعلیم' },
+        name: { en: 'Government Girls Primary School', ur: 'گورنمنٹ گرلز پرائمری سکول' },
+        description: { en: 'The primary educational institution for girls in our village, fostering a supportive environment for learning, growth, and empowerment of the next generation.', ur: 'ہمارے گاؤں میں لڑکیوں کے لیے بنیادی تعلیمی ادارہ، جو اگلی نسل کی تعلیم اور ترقی کے لیے ایک سازگار ماحول فراہم کرتا ہے۔' }
       },
       {
         id: 4,
@@ -182,6 +183,24 @@ export const t = {
         description: { 
           en: 'This is the one and only government middle school for boys. In the past, the boys went to different villages for studies, but now they can study at their own village school. Children come daily to study, learn and play. There is also a ground for children to play. Students from different villages also come to study. This school also encourages the children to come and study.', 
           ur: 'یہ لڑکوں کے لیے واحد گورنمنٹ مڈل سکول ہے۔ ماضی میں لڑکے تعلیم حاصل کرنے کے لیے دوسرے دیہاتوں میں جاتے تھے لیکن اب وہ اپنے ہی گاؤں کے سکول میں پڑھ سکتے ہیں۔ بچے روزانہ پڑھنے، سیکھنے اور کھیلنے آتے ہیں، اور بچوں کے کھیلنے کے لیے ایک گراؤنڈ بھی ہے۔ مختلف دیہاتوں سے بھی طلباء پڑھنے آتے ہیں۔ یہ سکول بچوں کو آنے اور تعلیم حاصل کرنے کی ترغیب دیتا ہے۔' 
+        }
+      },
+      {
+        id: 5,
+        category: { en: 'Heritage', ur: 'تاریخ' },
+        name: { en: 'Baba Dhunni Baloch', ur: 'بابا دھنی بلوچ' },
+        description: { 
+          en: "Before Akhtarabad existed, our people lived in a small settlement on the eastern (mashriq) side of Okara city. According to oral tradition, an elderly shepherd named Baba Dhunni Baloch once grazed his animals near the village. One day, an animal wandered onto the nearby railway track just as a train was approaching — and at that very moment, Baba Dhunni was engaged in namaz nearby. The train came to a halt before reaching the animal.\n\nWhile some believed the train stopped simply because of the animal, others believed it was due to the old man's prayer at that very moment. Word of the incident reached the British administration, who named the railway station after him — \"Dhunni Wala.\" Over time, the settlement grew and was eventually renamed Akhtarabad.\n\nThis is the story of the righteous people of our village — a tale of faith, humility, and quiet devotion.\n\n(Note: This account has been passed down by our elders through oral tradition. Its historical accuracy cannot be verified — only Allah Almighty knows the truth.)", 
+          ur: "آج کے اخترآباد سے پہلے، ہمارے لوگ اوکاڑہ شہر کے مشرقی جانب ایک چھوٹی سی بستی میں رہتے تھے۔ زبانی روایت کے مطابق، ایک بزرگ چرواہے بابا دھنی بلوچ ایک بار گاؤں کے قریب اپنے جانور چرا رہے تھے۔ ایک دن، ایک جانور قریبی ریلوے ٹریک پر چلا گیا جب ایک ٹرین آ رہی تھی — اور اسی وقت، بابا دھنی قریب ہی نماز میں مشغول تھے۔ ٹرین جانور تک پہنچنے سے پہلے ہی رک گئی۔\n\nجبکہ کچھ کا خیال تھا کہ ٹرین محض جانور کی وجہ سے رکی، دوسروں کا ماننا تھا کہ یہ اسی وقت بزرگ کی دعا کی وجہ سے تھا۔ اس واقعے کی خبر برطانوی انتظامیہ تک پہنچی، جنہوں نے ریلوے اسٹیشن کا نام ان کے نام پر — \"دھنی والا\" رکھ دیا۔ وقت گزرنے کے ساتھ، بستی بڑی ہوئی اور بالآخر اس کا نام اخترآباد رکھ دیا گیا۔\n\nیہ ہمارے گاؤں کے نیک لوگوں کی کہانی ہے — ایمان، عاجزی اور خاموش عقیدت کی داستان۔\n\n(نوٹ: یہ بیان ہمارے بزرگوں کے ذریعے زبانی روایت سے منتقل ہوا ہے۔ اس کی تاریخی درستگی کی تصدیق نہیں کی جا سکتی — صرف اللہ تعالیٰ ہی حقیقت جانتا ہے۔)" 
+        }
+      },
+      {
+        id: 6,
+        category: { en: 'Health', ur: 'صحت' },
+        name: { en: 'Healthcare Facilities', ur: 'طبی سہولیات' },
+        description: { 
+          en: "The village is home to a Basic Health Unit (BHU) that provides essential medical care to local residents. While modest in scale, this facility plays a vital role in the daily lives of the community, offering treatment for common ailments and minor health issues without requiring residents to travel to the city.\n\nFor routine check-ups, minor injuries, and everyday health concerns, villagers rely on this local facility as their first point of care. Though basic in its resources, the hospital remains an essential and much-valued institution — offering timely relief and accessible healthcare to the people of Kori Balocha Wala 31/4L.", 
+          ur: "گاؤں میں ایک بنیادی صحت مرکز (BHU) موجود ہے جو مقامی رہائشیوں کو ضروری طبی سہولیات فراہم کرتا ہے۔ اگرچہ یہ سہولت محدود پیمانے پر ہے، مگر یہ برادری کی روزمرہ زندگی میں اہم کردار ادا کرتی ہے — عام بیماریوں اور معمولی طبی مسائل کے علاج کے لیے، تاکہ لوگوں کو شہر کا سفر نہ کرنا پڑے۔\n\nمعمول کے چیک اپ، معمولی زخموں اور روزمرہ صحت کے مسائل کے لیے، گاؤں والے اسی مقامی سہولت پر انحصار کرتے ہیں۔ اگرچہ وسائل محدود ہیں، مگر یہ ہسپتال ایک اہم اور قابلِ قدر ادارہ ہے — جو کوڑی بلوچاں والا 31/4L کے لوگوں کو بروقت علاج اور قابلِ رسائی طبی سہولیات فراہم کرتا ہے۔" 
         }
       }
     ],
@@ -226,6 +245,11 @@ export const t = {
         id: 6,
         title: { en: 'Jamia Masjid Siddique E Akbar (R.A)', ur: 'جامع مسجد صدیق اکبر (رض)' },
         description: { en: "The elegant minaret and dome of the village's main and first masjid, standing for over 30 years.", ur: '۳۰ سال سے زائد عرصے سے قائم گاؤں کی پہلی اور مرکزی مسجد کا خوبصورت مینار اور گنبد۔' }
+      },
+      {
+        id: 10,
+        title: { en: 'Village Street', ur: 'گاؤں کی گلی' },
+        description: { en: 'A peaceful view of a typical street in our village, reflecting the simple and serene daily life of Chak 31/4L.', ur: 'ہمارے گاؤں کی ایک عام گلی کا پُرامن نظارہ، جو چک 31/4L کی سادہ اور پُرسکون روزمرہ زندگی کی عکاسی کرتا ہے۔' }
       }
     ]
   }
