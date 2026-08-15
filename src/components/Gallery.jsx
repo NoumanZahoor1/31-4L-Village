@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image as ImageIcon, Eye, X, Play, Film } from 'lucide-react';
+import { Eye, X, Play, Film } from 'lucide-react';
 import { galleryItems } from '../data/mockData';
 import { useLang } from '../context/LanguageContext';
 import { t, get } from '../data/translations';

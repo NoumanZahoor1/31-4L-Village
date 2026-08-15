@@ -1,3 +1,4 @@
+/* eslint-disable react/only-export-components */
 import React, { createContext, useContext, useState } from 'react';
 
 const LanguageContext = createContext(null);

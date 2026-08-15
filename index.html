@@ -7,17 +7,31 @@
     <link rel="preload" as="image" href="/images/hero.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Theme Color (mobile browser toolbar) -->
+    <meta name="theme-color" content="#1a5c38" />
+    <meta name="application-name" content="Chak 31/4L Community Portal" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Chak 31/4L" />
+
     <!-- Primary SEO Tags -->
     <title>Chak 31/4L Village Okara | Kori Baloch | Punjab, Pakistan</title>
     <meta name="description" content="Official community portal of Chak 31/4L (Kori Baloch / Kori Balocha) village, Okara District, Punjab, Pakistan. Also known as 31-4L, 31 4L, Akhtarabad. Explore our famous personalities, landmarks, culture, galleries, and community news." />
-    <meta name="keywords" content="Chak 31/4L, 31 4L village, 31-4L, 31/41 village okara, 31 41 village, 31/4L village Okara, Kori Baloch, Kori Balocha, 31 Kori, Akhtarabad village, village in Pakistan, best village in Pakistan, Okara village, Punjab village, Pakistan village community, Chak 31 village, village portal Pakistan, agricultural village Punjab, Kori Baloch community, 31 4 L Okara, 31 4l okara punjab, chak 31 okara, kori balocha 31 4l, 31 four L village" />
+    <meta name="keywords" content="Chak 31/4L, 31 4L village, 31-4L, 31/4l, 31/41 village okara, 31 41 village, 31/4L village Okara, Kori Baloch, Kori Balocha, 31 Kori, Akhtarabad village, village in Pakistan, best village in Pakistan, Okara village, Punjab village, Pakistan village community, Chak 31 village, village portal Pakistan, agricultural village Punjab, Kori Baloch community, 31 4 L Okara, 31 4l okara punjab, chak 31 okara, kori balocha 31 4l, 31 four L village, chak 31 4L okara, 31 FL village" />
     <meta name="author" content="Chak 31/4L Community" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://31-4l-village.vercel.app/" />
+
+    <!-- hreflang for bilingual site (English + Urdu) -->
+    <link rel="alternate" hreflang="en" href="https://31-4l-village.vercel.app/" />
+    <link rel="alternate" hreflang="ur" href="https://31-4l-village.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://31-4l-village.vercel.app/" />
 
     <!-- Language & Geographic Targeting -->
     <meta name="geo.region" content="PK-PB" />
     <meta name="geo.placename" content="Chak 31/4L, Okara, Punjab, Pakistan" />
+    <meta name="geo.position" content="30.8167;73.4500" />
+    <meta name="ICBM" content="30.8167, 73.4500" />
     <meta name="language" content="English" />
 
     <!-- Open Graph / Facebook / WhatsApp Sharing -->
@@ -29,6 +43,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_PK" />
+    <meta property="og:locale:alternate" content="ur_PK" />
     <meta property="og:site_name" content="Chak 31/4L Community Portal" />
 
     <!-- Twitter Card -->
@@ -39,30 +54,52 @@
 
     <!-- Structured Data (JSON-LD) – tells Google exactly what this site is about -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Place",
-      "name": "Chak 31/4L Village Okara (Kori Balocha)",
-      "alternateName": ["31-4L", "31 4L", "Kori Baloch", "Kori Balocha", "31 Kori", "31 Baloch", "Akhtarabad", "31/41 village", "31 4l okara", "chak 31 okara", "31 four L village Okara"],
-      "description": "Chak 31/4L, also known as Kori Balocha or Akhtarabad, is a vibrant agricultural village in Okara District, Punjab, Pakistan. The village is home to approximately 4,000 residents of the Baloch caste (Jatoi, Lashari, Rind), with main crops including potato, wheat, rice, corn, and sugarcane. Located near Okara city in the 4L canal system of Punjab.",
-      "url": "https://31-4l-village.vercel.app/",
-      "image": "https://31-4l-village.vercel.app/images/hero.webp",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chak 31/4L",
-        "addressRegion": "Punjab",
-        "addressCountry": "PK",
-        "addressCity": "Okara"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Chak 31/4L Village Okara",
+        "alternateName": ["31/4L", "31-4L", "Chak 31/4l", "31/4l village okara", "chak 31/4L Kori Baloch", "31 4l", "31/41 village okara", "31 FL village"],
+        "url": "https://31-4l-village.vercel.app/",
+        "description": "Official community website for Chak 31/4L (Kori Balocha), Okara, Punjab, Pakistan.",
+        "inLanguage": ["en", "ur"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://31-4l-village.vercel.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "addressCountry": "Pakistan"
-      },
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Okara District, Punjab, Pakistan"
+      {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": "Chak 31/4L (Kori Balocha)",
+        "alternateName": ["31-4L", "31 4L", "Kori Baloch", "Kori Balocha", "31 Kori", "31 Baloch", "Akhtarabad", "31/41 village", "31 4l okara", "chak 31 okara", "31 four L village Okara", "31/4l", "31 FL village Okara"],
+        "description": "Chak 31/4L, also known as Kori Balocha or Akhtarabad, is a vibrant agricultural village in Okara District, Punjab, Pakistan. The village is home to approximately 4,000 residents of the Baloch caste (Jatoi, Lashari, Rind), with main crops including potato, wheat, rice, corn, and sugarcane. Located near Okara city in the 4L canal system of Punjab.",
+        "url": "https://31-4l-village.vercel.app/",
+        "image": "https://31-4l-village.vercel.app/images/hero.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Chak 31/4L",
+          "addressLocality": "Okara",
+          "addressRegion": "Punjab",
+          "postalCode": "56411",
+          "addressCountry": "PK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "30.8167",
+          "longitude": "73.4500"
+        },
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Okara District, Punjab, Pakistan"
+        },
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Chak_No._31/4-L",
+          "https://www.wikidata.org/wiki/Q123846590"
+        ]
       }
-    }
+    ]
     </script>
   </head>
   <body>

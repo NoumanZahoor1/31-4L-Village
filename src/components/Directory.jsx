@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Star, X, User } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
-import { t, get } from '../data/translations';
+import { get } from '../data/translations';
 
 // —— Famous Personalities Data —————————————————————————————————————————————————
 const personalitiesData = [
@@ -499,11 +499,6 @@ export default function FamousPersonalities() {
   const [selectedGroup, setSelectedGroup] = useState('All');
   const [selectedStatus, setSelectedStatus] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeProfile, setActiveProfile] = useState(null);
-  const [previewImage, setPreviewImage] = useState(null);
-  // Store custom uploaded images per personality id
-  const [customImages, setCustomImages] = useState({});
-
   const filtered = personalitiesData.filter(p => {
     const matchGroup  = selectedGroup === 'All' || p.type === selectedGroup;
     const matchStatus = selectedStatus === 'All' || p.category === selectedStatus;
@@ -515,14 +510,7 @@ export default function FamousPersonalities() {
     return matchGroup && matchStatus && matchSearch;
   });
 
-  const handleImageUpload = (id, e) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const url = URL.createObjectURL(file);
-    setCustomImages(prev => ({ ...prev, [id]: url }));
-  };
-
-  const getImage = (p) => customImages[p.id] || p.image;
+  const getImage = (p) => p.image;
 
   const colors = (cat) => CATEGORY_COLORS[cat] || { bg: 'bg-gray-100', text: 'text-gray-700', dot: 'bg-gray-400' };
 

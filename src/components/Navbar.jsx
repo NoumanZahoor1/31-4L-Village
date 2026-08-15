@@ -3,6 +3,18 @@ import { Menu, X, Landmark, ChevronDown } from 'lucide-react';
 import { useLang, LANGUAGES } from '../context/LanguageContext';
 import { t, get } from '../data/translations';
 
+const navItems = [
+  { id: 'home',       key: 'home' },
+  { id: 'about',      key: 'about' },
+  { id: 'culture',    key: 'culture' },
+  { id: 'landmarks',  key: 'landmarks' },
+  { id: 'directory',  key: 'directory' },
+  { id: 'news',       key: 'news' },
+  { id: 'gallery',    key: 'gallery' },
+  { id: 'developers', key: 'developers' },
+  { id: 'contact',    key: 'contact' },
+];
+
 export default function Navbar() {
   const { lang, setLang } = useLang();
   const [isOpen, setIsOpen]       = useState(false);
@@ -12,18 +24,6 @@ export default function Navbar() {
   const [mobileLangOpen, setMobileLangOpen] = useState(false);
   const langRef       = useRef(null);
   const mobileLangRef = useRef(null);
-
-  const navItems = [
-    { id: 'home',       key: 'home' },
-    { id: 'about',      key: 'about' },
-    { id: 'culture',    key: 'culture' },
-    { id: 'landmarks',  key: 'landmarks' },
-    { id: 'directory',  key: 'directory' },
-    { id: 'news',       key: 'news' },
-    { id: 'gallery',    key: 'gallery' },
-    { id: 'developers', key: 'developers' },
-    { id: 'contact',    key: 'contact' },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {

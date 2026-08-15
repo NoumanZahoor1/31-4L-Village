@@ -1,6 +1,6 @@
 import React from 'react';
 import { Users, MapPin, Sprout, GraduationCap, ChevronDown } from 'lucide-react';
-import { villageStats } from '../data/mockData';
+
 import { useLang } from '../context/LanguageContext';
 import { t, get } from '../data/translations';
 
