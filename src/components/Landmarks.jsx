@@ -17,6 +17,7 @@ export default function Landmarks() {
       image: original.image,
       category: typeof item.category === 'object' ? get(item.category, lang) : item.category,
       name: typeof item.name === 'object' ? get(item.name, lang) : (item.name || original.name),
+      alias: item.alias ? (typeof item.alias === 'object' ? get(item.alias, lang) : item.alias) : null,
       description: typeof item.description === 'object' ? get(item.description, lang) : item.description
     };
   });
@@ -82,9 +83,14 @@ export default function Landmarks() {
                   <span className="text-[10px] font-bold text-brand-gold uppercase tracking-wider block mb-2">
                     {landmark.category}
                   </span>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-brand-emerald transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-brand-emerald transition-colors">
                     {landmark.name}
                   </h3>
+                  {landmark.alias && (
+                    <p className="text-sm text-gray-500 italic font-medium mb-4">
+                      ({landmark.alias})
+                    </p>
+                  )}
                   <p className="text-gray-500 text-sm leading-relaxed mb-6 whitespace-pre-line">
                     {landmark.description}
                   </p>
