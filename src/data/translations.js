@@ -167,8 +167,11 @@ export const t = {
       {
         id: 2,
         category: { en: 'Community', ur: 'کمیونٹی' },
-        name: { en: 'Bahr Wala Chowk', ur: 'باہر والا چوک' },
-        description: { en: 'The main crossroads and heartbeat of our village — connecting Mashriq (East) to Depalpur Road, Maghrib (West) to Sahiwal Road, Shumal (North) to Okara Road, and Janub (South) to Pakpattan Road. For generations, this chowk has been alive with food stalls, a snooker club, motorcycle repair shops, milk vendors, and local barbershops (hamams). At its heart stands a small but beautiful mosque. More than just a junction — timeless, welcoming, and unmistakably ours.', ur: 'باہر والا چوک ہمارے گاؤں کا مرکزی چوراہا اور دھڑکن ہے — مشرق میں ڈیپالپور روڈ، مغرب میں ساہیوال روڈ، شمال میں اوکاڑہ روڈ، اور جنوب میں پاکپتن روڈ کو ملاتا ہے۔ نسلوں سے یہ چوک گاؤں کی زندگی کا مرکز رہا ہے۔ کھانے کے اسٹال، سنوکر کلب، موٹر سائیکل مکینک، دودھ فروش اور حجام ہمیشہ یہاں موجود رہتے ہیں۔ اس کے قلب میں ایک خوبصورت مسجد ہے۔' }
+        name: { en: 'Bahr Wala Chowk (Qaiser Naeem Shaheed Chowk)', ur: 'باہر والا چوک (قیصر نعیم شہید چوک)' },
+        description: {
+          en: 'The main crossroads and heartbeat of our village — connecting Mashriq (East) to Depalpur Road, Maghrib (West) to Sahiwal Road, Shumal (North) to Okara Road, and Janub (South) to Pakpattan Road. For generations, this chowk has been alive with food stalls, a snooker club, motorcycle repair shops, milk vendors, and local barbershops (hamams). At its heart stands a small but beautiful mosque. More than just a junction — timeless, welcoming, and unmistakably ours.',
+          ur: 'باہر والا چوک — جسے قیصر نعیم شہید چوک بھی کہا جاتا ہے — ہمارے گاؤں کا مرکزی چوراہا اور اصل دھڑکن ہے۔ یہ مشرق میں ڈیپالپور روڈ، مغرب میں ساہیوال روڈ، شمال میں اوکاڑہ روڈ اور جنوب میں پاکپتن روڈ کو آپس میں ملاتا ہے۔ نسل در نسل یہ چوک گاؤں کی زندگی کا مرکز رہا ہے — کھانے کے اسٹال، سنوکر کلب، موٹرسائیکل مکینک، دودھ فروش اور حجام (حمام) یہاں ہمیشہ موجود رہتے ہیں۔ اس کے قلب میں ایک چھوٹی مگر خوبصورت مسجد قائم ہے۔ یہ محض ایک سڑکوں کا ملاپ نہیں — یہ ہمارا اپنا، ہمیشہ جیتا جاگتا اور ناقابلِ فراموش چوک ہے۔'
+        }
       },
       {
         id: 3,

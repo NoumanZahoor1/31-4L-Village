@@ -107,9 +107,9 @@ export const placeLandmarks = [
   },
   {
     id: 2,
-    name: "Bahr Wala Chowk",
+    name: "Bahr Wala Chowk (Qaiser Naeem Shaheed Chowk)",
     category: "Community",
-    description: "The main crossroads and heartbeat of our village - connecting Depalpur Road (East), Sahiwal Road (West), Okara Road (North), and Pakpattan Road (South). Home to food stalls, a snooker club, motorcycle repair shops, milk vendors, barbershops, and a beautiful mosque at its heart.",
+    description: "The main crossroads and heartbeat of our village — connecting Mashriq (East) to Depalpur Road, Maghrib (West) to Sahiwal Road, Shumal (North) to Okara Road, and Janub (South) to Pakpattan Road. For generations, this chowk has been alive with food stalls, a snooker club, motorcycle repair shops, milk vendors, and local barbershops (hamams). At its heart stands a small but beautiful mosque. More than just a junction — timeless, welcoming, and unmistakably ours.",
     image: "/images/bahr.webp"
   },
   {
