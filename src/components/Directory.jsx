@@ -499,6 +499,7 @@ export default function FamousPersonalities() {
   const [selectedGroup, setSelectedGroup] = useState('All');
   const [selectedStatus, setSelectedStatus] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [previewImage, setPreviewImage] = useState(null);
   const filtered = personalitiesData.filter(p => {
     const matchGroup  = selectedGroup === 'All' || p.type === selectedGroup;
     const matchStatus = selectedStatus === 'All' || p.category === selectedStatus;
