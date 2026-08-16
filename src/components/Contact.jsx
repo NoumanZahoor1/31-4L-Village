@@ -157,7 +157,7 @@ export default function Contact() {
             {/* Map embed — flex-1 fills remaining height */}
             <div className="flex-1 min-h-[320px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6865.978896020047!2d73.37147945!3d30.634254949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922ac0252fbf443%3A0xb2d1663b9ef46535!2sChak%20No.31%2F4.L%2C%20Pakistan!5e0!3m2!1sen!2s!4v1786437675098!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.153604681563!2d73.37009473543773!3d30.65743933996626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922af007501557b%3A0x82b07e5648705adf!2sChak%20No.31%2F4.L%2C%20Okara%2C%20Pakistan!5e0!3m2!1sen!2s!4v1786857008420!5m2!1sen!2s"
                 width="100%" height="100%"
                 style={{ border: 0, display: 'block' }}
                 allowFullScreen=""

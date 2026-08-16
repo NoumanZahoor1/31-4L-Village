@@ -254,6 +254,11 @@ export const t = {
         id: 10,
         title: { en: 'Village Street', ur: 'گاؤں کی گلی' },
         description: { en: 'A peaceful view of a typical street in our village, reflecting the simple and serene daily life of Chak 31/4L.', ur: 'ہمارے گاؤں کی ایک عام گلی کا پُرامن نظارہ، جو چک 31/4L کی سادہ اور پُرسکون روزمرہ زندگی کی عکاسی کرتا ہے۔' }
+      },
+      {
+        id: 11,
+        title: { en: 'Dera Haji Noosher Khan', ur: 'ڈیرہ حاجی نوشیر خان' },
+        description: { en: 'A prominent gathering place and dera in the village, representing local traditions and community discussions.', ur: 'گاؤں کا ایک نمایاں ڈیرہ اور بیٹھک، جو مقامی روایات اور برادری کے مباحثوں کی نمائندگی کرتا ہے۔' }
       }
     ]
   }

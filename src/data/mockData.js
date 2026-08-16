@@ -309,5 +309,12 @@ export const galleryItems = [
     title: "Village Street",
     description: "A peaceful view of a typical street in our village, reflecting the simple and serene daily life of Chak 31/4L.",
     image: "/images/street.webp"
+  },
+  {
+    id: 11,
+    category: "landmarks",
+    title: "Dera Haji Noosher Khan",
+    description: "A prominent gathering place and dera in the village, representing local traditions and community discussions.",
+    image: "/images/dera haji nosheer khan.webp"
   }
 ];
