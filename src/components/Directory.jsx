@@ -167,7 +167,7 @@ const personalitiesData = [
   { id: 222, name: { en: 'Kernel Rtd Zafar Iqbal Jatoi', ur: 'کرنل ریٹائرڈ ظفر اقبال جتوئی' }, type: 'Notable', field: { en: 'Kernel (Rtd) / Notable', ur: 'کرنل (ریٹائرڈ) / معزز شخصیت' }, category: 'Alive', bio: { en: 'Distinguished retired Army Colonel serving as a proud representative and elder of Chak 31/4L.', ur: 'پاک فوج کے ریٹائرڈ کرنل جن کی خدمات گاؤں کے لیے باعثِ فخر ہیں۔' }, image: null, achievement: { en: 'Kernel (Rtd) — Military Service', ur: 'کرنل (ریٹائرڈ)' } },
   { id: 223, name: { en: 'Zeeshan Jatoi', ur: 'ذیشان جتوئی' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Active young leader involved in community welfare and development.', ur: 'علاقائی فلاح و ترقی میں مصروف عمل متحرک شخصیت۔' }, image: '/images/people/zeeshan.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
   { id: 224, name: { en: 'Naeem Ashraf Jatoi', ur: 'نعیم اشرف جتوئی' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected member contributing actively to social initiatives.', ur: 'سماجی اور فلاحی کاموں کے معزز و سرگرم رکن۔' }, image: null, achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
-  { id: 228, name: { en: 'Rustam Ali', ur: 'رستم علی' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected and well-known figure of Chak 31/4L contributing to community welfare and village harmony.', ur: 'چک 31/4L کی معزز اور نامور شخصیت جو برادری کی فلاح اور گاؤں کی ہم آہنگی میں نمایاں کردار ادا کر رہے ہیں۔' }, image: '/images/people/rustam ali.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
+  { id: 228, name: { en: 'Rustam Ali', ur: 'رستم علی' }, type: 'Notable', field: { en: 'Notable Personality', ur: 'معزز شخصیت' }, category: 'Alive', bio: { en: 'Respected and well-known figure of Chak 31/4L contributing to community welfare and village harmony.', ur: 'چک 31/4L کی معزز اور نامور شخصیت جو برادری کی فلاح اور گاؤں کی ہم آہنگی میں نمایاں کردار ادا کر رہے ہیں۔' }, image: '/images/people/rustam-ali.webp', achievement: { en: 'Notable Personality', ur: 'معزز شخصیت' } },
 
 
   { id: 225, name: { en: 'Assistant Sub Inspector Tanveer', ur: 'اسسٹنٹ سب انسپکٹر تنویر' }, type: 'Police', field: { en: 'Assistant Sub Inspector (Alive)', ur: 'اسسٹنٹ سب انسپکٹر (حیات)' }, category: 'Alive', bio: { en: 'Committed ASI serving efficiently in police department administration and crime prevention.', ur: 'پولیس محکمے میں فرض شناسی سے خدمات انجام دینے والے اسسٹنٹ سب انسپکٹر۔' }, image: '/images/people/Tanveer.webp', achievement: { en: 'Assistant Sub Inspector', ur: 'اسسٹنٹ سب انسپکٹر' } },
@@ -292,7 +292,7 @@ const personalitiesData = [
       en: 'Dedicated Police officer from Chak 31/4L serving with commitment and honour in the police department.',
       ur: 'چک 31/4L کے وابستہ پولیس اہلکار جو وفاداری اور عزت کے ساتھ محکمہ پولیس میں خدمات انجام دے رہے ہیں۔',
     },
-    image: '/images/people/wajib Police  .webp',
+    image: '/images/people/wajib-police.webp',
     achievement: { en: 'Police Department', ur: 'پولیس اہلکار' },
   },
   // ================= TEACHERS =================
@@ -410,7 +410,7 @@ const personalitiesData = [
       en: 'Late Sir Wazir Ali was a dedicated and respected teacher who served the education of Chak 31/4L with great devotion and left a lasting legacy.',
       ur: 'مرحوم سر وزیر علی ایک مخلص اور محترم استاد تھے جنہوں نے چک 31/4L کی تعلیم کے لیے بڑی لگن سے خدمات انجام دیں اور ایک دیرپا وراثت چھوڑی۔',
     },
-    image: '/images/people/sir Wazir ali.webp',
+    image: '/images/people/sir-wazir-ali.webp',
     achievement: { en: 'Education Service (Deceased)', ur: 'مرحوم استاد' },
   },
   // ================= DOCTORS =================
