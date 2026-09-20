@@ -107,6 +107,7 @@ export default function Navbar() {
             <div className="relative ml-3" ref={langRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
+                aria-label="Select Language"
                 className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold hover:bg-brand-gold/30 transition-all text-sm font-bold"
               >
                 🌐 <span>{currentLang.label}</span>
@@ -143,7 +144,8 @@ export default function Navbar() {
             <div className="relative" ref={mobileLangRef}>
               <button
                 onClick={() => setMobileLangOpen(!mobileLangOpen)}
-                className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs font-bold"
+                aria-label="Select Language"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs font-bold min-h-[38px]"
               >
                 🌐 {currentLang.label}
               </button>
@@ -153,9 +155,8 @@ export default function Navbar() {
                     <button
                       key={l.code}
                       onClick={() => { setLang(l.code); setMobileLangOpen(false); }}
-                      className={`w-full text-left px-3 py-2.5 text-xs flex items-center gap-2 transition-colors ${
-                        lang === l.code ? 'bg-brand-gold/20 text-brand-gold font-bold' : 'text-white/80 hover:bg-white/10 hover:text-white'
-                      }`}
+                      aria-label={`Switch to ${l.label}`}
+                      className="w-full text-left px-3 py-2.5 text-xs flex items-center gap-2 transition-colors"
                     >
                       {l.code === 'en' ? '🇬🇧' : l.code === 'ur' ? '🇵🇰' : '🏔️'} {l.native}
                     </button>
@@ -166,7 +167,8 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md hover:bg-white/10 focus:outline-none transition-colors"
+              aria-label={isOpen ? "Close Menu" : "Open Navigation Menu"}
+              className="p-2 rounded-md hover:bg-white/10 focus:outline-none transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>

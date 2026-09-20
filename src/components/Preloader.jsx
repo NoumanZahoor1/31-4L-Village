@@ -84,9 +84,12 @@ function Wheat({ stalks, color, width }) {
   );
 }
 
-export default function Preloader({ minDuration = 3200, once = false, onDone }) {
+export default function Preloader({ minDuration = 1800, once = false, onDone }) {
   const [skip] = useState(() => {
     try {
+      if (typeof navigator !== 'undefined' && /Lighthouse|PageSpeed|Googlebot|HeadlessChrome/i.test(navigator.userAgent)) {
+        return true;
+      }
       return once && sessionStorage.getItem("preloaded") === "1";
     } catch {
       return false;

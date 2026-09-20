@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { LanguageProvider, useLang } from './context/LanguageContext';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Culture from './components/Culture';
-import Landmarks from './components/Landmarks';
-import Directory from './components/Directory';
-import NewsBoard from './components/NewsBoard';
-import Gallery from './components/Gallery';
-import Developers from './components/Developers';
-import Contact from './components/Contact';
 import { Landmark, ArrowUp } from 'lucide-react';
 import { t, get } from './data/translations';
+
+// Lazy load below-the-fold sections for maximum performance
+const Culture = lazy(() => import('./components/Culture'));
+const Landmarks = lazy(() => import('./components/Landmarks'));
+const Directory = lazy(() => import('./components/Directory'));
+const NewsBoard = lazy(() => import('./components/NewsBoard'));
+const Gallery = lazy(() => import('./components/Gallery'));
+const Developers = lazy(() => import('./components/Developers'));
+const Contact = lazy(() => import('./components/Contact'));
 
 function MainAppContent() {
   const { lang } = useLang();
@@ -30,13 +32,15 @@ function MainAppContent() {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Culture />
-        <Landmarks />
-        <Directory />
-        <NewsBoard />
-        <Gallery />
-        <Developers />
-        <Contact />
+        <Suspense fallback={<div className="py-20 text-center text-gray-500 font-medium">Loading section...</div>}>
+          <Culture />
+          <Landmarks />
+          <Directory />
+          <NewsBoard />
+          <Gallery />
+          <Developers />
+          <Contact />
+        </Suspense>
       </main>
 
       {/* Footer */}
@@ -52,10 +56,10 @@ function MainAppContent() {
                   {get(t.nav.brandName, lang)}
                 </span>
               </div>
-              <p className="text-white/60 text-sm leading-relaxed">
+              <p className="text-white/80 text-sm leading-relaxed">
                 {get(t.footer.tagline, lang)}
               </p>
-              <div className="text-xs text-white/40">
+              <div className="text-xs text-white/70">
                 {lang === 'ur' ? 'موقعی کوآرڈینیٹس' : 'Coordinates'}: 30.8012° N, 73.4478° E
               </div>
             </div>
@@ -65,7 +69,7 @@ function MainAppContent() {
               <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold mb-4">
                 {get(t.footer.quickLinks, lang)}
               </h4>
-              <ul className="space-y-2 text-sm text-white/60">
+              <ul className="space-y-2 text-sm text-white/80">
                 <li><a href="#home" className="hover:text-white transition-colors">{get(t.nav.home, lang)}</a></li>
                 <li><a href="#about" className="hover:text-white transition-colors">{get(t.nav.about, lang)}</a></li>
                 <li><a href="#culture" className="hover:text-white transition-colors">{get(t.nav.culture, lang)}</a></li>
@@ -78,7 +82,7 @@ function MainAppContent() {
               <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold mb-4">
                 {get(t.footer.directories, lang)}
               </h4>
-              <ul className="space-y-2 text-sm text-white/60">
+              <ul className="space-y-2 text-sm text-white/80">
                 <li><a href="#directory" className="hover:text-white transition-colors">{get(t.nav.directory, lang)}</a></li>
                 <li><a href="#news" className="hover:text-white transition-colors">{get(t.nav.news, lang)}</a></li>
                 <li><a href="#gallery" className="hover:text-white transition-colors">{get(t.nav.gallery, lang)}</a></li>
@@ -91,7 +95,7 @@ function MainAppContent() {
               <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-gold mb-4">
                 {get(t.footer.contactInfo, lang)}
               </h4>
-              <p className="text-white/60 text-sm leading-relaxed">
+              <p className="text-white/80 text-sm leading-relaxed">
                 {lang === 'ur' ? (
                   <>
                     یوسی کونسل آفس،<br />
@@ -107,7 +111,7 @@ function MainAppContent() {
                 )}
               </p>
               <div className="pt-2">
-                <span className="text-xs text-white/40">
+                <span className="text-xs text-white/70">
                   © {new Date().getFullYear()} {get(t.nav.brandName, lang)} Portal. {get(t.footer.rights, lang)}
                 </span>
               </div>
@@ -115,7 +119,7 @@ function MainAppContent() {
 
           </div>
 
-          <div className="mt-12 pt-8 border-t border-white/10 text-center flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
+          <div className="mt-12 pt-8 border-t border-white/10 text-center flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/70">
             <div>
               {get(t.footer.designedBy, lang)}
             </div>
@@ -130,7 +134,8 @@ function MainAppContent() {
         {/* Back to top button */}
         <button 
           onClick={scrollToTop}
-          className="absolute right-6 -top-6 bg-brand-gold text-brand-emerald hover:bg-white p-3 rounded-full shadow-2xl transition-all duration-300 border border-white/10 cursor-pointer"
+          aria-label="Back to Top"
+          className="absolute right-6 -top-6 bg-brand-gold text-brand-emerald hover:bg-white p-3 rounded-full shadow-2xl transition-all duration-300 border border-white/10 cursor-pointer flex items-center justify-center min-w-[44px] min-h-[44px]"
           title="Back to Top"
         >
           <ArrowUp className="h-5 w-5" />
