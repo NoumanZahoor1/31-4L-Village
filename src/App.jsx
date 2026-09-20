@@ -3,11 +3,11 @@ import { LanguageProvider, useLang } from './context/LanguageContext';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
 import { Landmark, ArrowUp } from 'lucide-react';
 import { t, get } from './data/translations';
 
 // Lazy load below-the-fold sections for maximum performance
+const About = lazy(() => import('./components/About'));
 const Culture = lazy(() => import('./components/Culture'));
 const Landmarks = lazy(() => import('./components/Landmarks'));
 const Directory = lazy(() => import('./components/Directory'));
@@ -31,8 +31,8 @@ function MainAppContent() {
       {/* Main Sections */}
       <main className="flex-grow">
         <Hero />
-        <About />
         <Suspense fallback={<div className="py-20 text-center text-gray-500 font-medium">Loading section...</div>}>
+          <About />
           <Culture />
           <Landmarks />
           <Directory />
@@ -148,7 +148,7 @@ function MainAppContent() {
 function App() {
   return (
     <LanguageProvider>
-      <Preloader once={false} />
+      <Preloader once={true} />
       <MainAppContent />
     </LanguageProvider>
   );

@@ -53,23 +53,14 @@ export default function Hero() {
   const intervalRef = useRef(null);
   const SLIDE_DURATION = 7000;
 
-  // Auto-advance slides with progress bar
+  // Auto-advance slides
   useEffect(() => {
-    setProgress(0);
-    const progressInterval = setInterval(() => {
-      setProgress(prev => {
-        if (prev >= 100) return 100;
-        return prev + (100 / (SLIDE_DURATION / 50));
-      });
-    }, 50);
-
     intervalRef.current = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
     }, SLIDE_DURATION);
 
     return () => {
       clearTimeout(intervalRef.current);
-      clearInterval(progressInterval);
     };
   }, [currentSlide]);
 
