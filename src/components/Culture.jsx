@@ -31,9 +31,9 @@ const SECTION_META = [
     accent: '#1e40af',
     tag: 'Community',
     images: [
-      { src: '/images/together.webp', label: 'Together' },
-      { src: '/images/wedding.webp', label: 'Wedding' },
-      { src: '/images/citrus.webp', label: 'Celebrations' },
+      { src: '/images/streets during Mela.webp', label: 'Community' },
+      { src: '/images/children playing.webp', label: 'Village Life' },
+      { src: '/images/street.webp', label: 'Village Street' },
     ],
   },
 ];
@@ -66,7 +66,7 @@ export default function Culture() {
         </div>
 
         {/* Alternating Section Blocks */}
-        <div className="space-y-24 mb-28">
+        <div className="space-y-24 mb-32 md:mb-40">
           {villageCulture.sections.map((section, idx) => {
             const meta = SECTION_META[idx];
             const translated = sectionMeta[idx];
@@ -76,11 +76,11 @@ export default function Culture() {
             return (
               <div
                 key={idx}
-                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
               >
 
                 {/* Image Collage Side */}
-                <div className="w-full lg:w-1/2 flex-shrink-0">
+                <div className={`w-full ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                   {meta.images.length === 4 ? (
                     /* 4-image 2×2 grid */
                     <div className="grid grid-cols-2 gap-3">
@@ -106,8 +106,8 @@ export default function Culture() {
                     </div>
                   ) : (
                     /* 3-image collage: 1 large + 2 stacked */
-                    <div className="grid grid-cols-2 gap-3" style={{ height: '400px' }}>
-                      <div className="relative overflow-hidden rounded-2xl shadow-md group col-span-1 h-full">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 h-auto sm:h-[360px]">
+                      <div className="relative overflow-hidden rounded-2xl shadow-md group col-span-1 h-56 sm:h-full min-h-0">
                         <img
                           src={meta.images[0].src}
                           alt={meta.images[0].label}
@@ -118,11 +118,11 @@ export default function Culture() {
                           {meta.images[0].label}
                         </span>
                       </div>
-                      <div className="flex flex-col gap-3 h-full">
+                      <div className="flex flex-col gap-3 h-full min-h-0">
                         {meta.images.slice(1).map((img, i) => (
                           <div
                             key={i}
-                            className="relative overflow-hidden rounded-2xl shadow-md group flex-1"
+                            className="relative overflow-hidden rounded-2xl shadow-md group h-40 sm:h-1/2 sm:flex-1 min-h-0"
                           >
                             <img
                               src={img.src}
@@ -141,7 +141,7 @@ export default function Culture() {
                 </div>
 
                 {/* Text Content Side */}
-                <div className="w-full lg:w-1/2 space-y-6">
+                <div className={`w-full space-y-6 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-bold uppercase tracking-widest"
                     style={{ color: meta.accent, borderColor: meta.accent, backgroundColor: `${meta.accent}12` }}>
                     <Icon className="h-4 w-4" />
@@ -174,7 +174,7 @@ export default function Culture() {
         </div>
 
         {/* ── Festivals & Sports ───────────────────────────────── */}
-        <div className="space-y-5">
+        <div className="space-y-5 pt-8 md:pt-12 border-t border-gray-100">
 
           {/* Section Label */}
           <div className="text-center mb-6">

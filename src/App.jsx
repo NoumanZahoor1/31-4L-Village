@@ -1,5 +1,6 @@
 import React from 'react';
 import { LanguageProvider, useLang } from './context/LanguageContext';
+import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -142,6 +143,7 @@ function MainAppContent() {
 function App() {
   return (
     <LanguageProvider>
+      <Preloader once={false} />
       <MainAppContent />
     </LanguageProvider>
   );
