@@ -215,12 +215,6 @@ export default function Preloader({ minDuration = 2400, once = false, onDone }) 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap');
 
-        @keyframes pl-draw { to { stroke-dashoffset: 0; } }
-        @keyframes pl-fill { to { fill: #ffe9b0; stroke-width: 0.3px; } }
-        @keyframes pl-fade-up {
-          from { opacity: 0; transform: translateY(10px); }
-          to   { opacity: 1; transform: none; }
-        }
         @keyframes pl-sway {
           0%, 100% { transform: rotate(-2.5deg); }
           50%      { transform: rotate(2.5deg); }
@@ -230,23 +224,11 @@ export default function Preloader({ minDuration = 2400, once = false, onDone }) 
           50%      { opacity: 1; }
         }
 
-        /* Accelerated stroke & text animations so subtitle is fully visible by ~60-70% progress */
         .pl-urdu {
-          fill: transparent;
           stroke: #ffd36b;
-          stroke-width: 1.4px;
           stroke-linejoin: round;
           stroke-dasharray: 400;
-          stroke-dashoffset: 400;
           filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.95));
-          animation:
-            pl-draw 1.0s ease-in-out 0.1s forwards,
-            pl-fill 0.4s ease 1.0s forwards;
-        }
-        .pl-sub {
-          opacity: 0;
-          text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95), 0 0 24px rgba(0, 0, 0, 0.85);
-          animation: pl-fade-up 0.6s ease 1.0s forwards;
         }
         .pl-sway {
           transform-box: fill-box;
@@ -257,8 +239,6 @@ export default function Preloader({ minDuration = 2400, once = false, onDone }) 
 
         @media (prefers-reduced-motion: reduce) {
           .pl-sway, .pl-star { animation: none; }
-          .pl-urdu { animation: none; fill: #ffe9b0; stroke-width: 0.3px; stroke-dashoffset: 0; }
-          .pl-sub { animation: none; opacity: 1; }
         }
       `}</style>
 
@@ -342,12 +322,24 @@ export default function Preloader({ minDuration = 2400, once = false, onDone }) 
             direction="rtl"
             fontSize="96"
             fontFamily="'Aref Ruqaa', 'Noto Nastaliq Urdu', serif"
-            className="pl-urdu"
+            className="pl-urdu transition-all duration-500 ease-out"
+            style={{
+              strokeDashoffset: Math.max(0, 400 - (progress / 60) * 400),
+              fill: progress >= 70 ? "#ffe9b0" : "transparent",
+              strokeWidth: progress >= 70 ? "0.3px" : "1.4px",
+            }}
           >
             چک 31/4L
           </text>
         </svg>
-        <p className="pl-sub mt-2 text-lg sm:text-xl font-bold tracking-wider text-white bg-black/35 backdrop-blur-md px-5 py-1.5 rounded-full border border-amber-300/30 shadow-[0_4px_20px_rgba(0,0,0,0.7)] inline-block">
+        <p 
+          className="mt-2 text-lg sm:text-xl font-bold tracking-wider text-white bg-black/35 backdrop-blur-md px-5 py-1.5 rounded-full border border-amber-300/30 shadow-[0_4px_20px_rgba(0,0,0,0.7)] inline-block transition-all duration-700 ease-out"
+          style={{
+             opacity: progress >= 70 ? 1 : 0,
+             transform: progress >= 70 ? "translateY(0)" : "translateY(15px)",
+             textShadow: "0 2px 12px rgba(0, 0, 0, 0.95), 0 0 24px rgba(0, 0, 0, 0.85)"
+          }}
+        >
           Kori Baloch, Okara, Punjab
         </p>
       </div>
