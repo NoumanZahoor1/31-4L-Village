@@ -84,7 +84,7 @@ function Wheat({ stalks, color, width }) {
   );
 }
 
-export default function Preloader({ minDuration = 1800, once = false, onDone }) {
+export default function Preloader({ minDuration = 2400, once = false, onDone }) {
   const [skip] = useState(() => {
     try {
       if (typeof navigator !== 'undefined' && /Lighthouse|PageSpeed|Googlebot|HeadlessChrome/i.test(navigator.userAgent)) {
@@ -230,7 +230,7 @@ export default function Preloader({ minDuration = 1800, once = false, onDone }) 
           50%      { opacity: 1; }
         }
 
-        /* Tweak stroke-dasharray / offset (400) if the outline draws too fast or too slow */
+        /* Accelerated stroke & text animations so subtitle is fully visible by ~60-70% progress */
         .pl-urdu {
           fill: transparent;
           stroke: #ffd36b;
@@ -240,13 +240,13 @@ export default function Preloader({ minDuration = 1800, once = false, onDone }) 
           stroke-dashoffset: 400;
           filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.95));
           animation:
-            pl-draw 2.4s ease-in-out 0.3s forwards,
-            pl-fill 1s ease 2.5s forwards;
+            pl-draw 1.0s ease-in-out 0.1s forwards,
+            pl-fill 0.4s ease 1.0s forwards;
         }
         .pl-sub {
           opacity: 0;
           text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95), 0 0 24px rgba(0, 0, 0, 0.85);
-          animation: pl-fade-up 1.2s ease 2.3s forwards;
+          animation: pl-fade-up 0.6s ease 1.0s forwards;
         }
         .pl-sway {
           transform-box: fill-box;
