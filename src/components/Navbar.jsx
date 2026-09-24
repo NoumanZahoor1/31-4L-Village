@@ -79,26 +79,26 @@ export default function Navbar() {
         ? 'py-3 bg-brand-emerald/90 text-white shadow-lg backdrop-blur-md border-b border-white/10'
         : 'py-5 bg-transparent text-white'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12">
 
           {/* Logo */}
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleNavClick('home')}>
-            <div className={`p-2 rounded-lg transition-colors ${scrolled ? 'bg-white/10' : 'bg-brand-emerald/80'}`}>
-              <Landmark className="h-6 w-6 text-brand-gold" />
+          <div className="flex items-center space-x-2 shrink-0 cursor-pointer mr-2 lg:mr-4" onClick={() => handleNavClick('home')}>
+            <div className={`p-1.5 sm:p-2 rounded-lg transition-colors ${scrolled ? 'bg-white/10' : 'bg-brand-emerald/80'}`}>
+              <Landmark className="h-5 w-5 sm:h-6 sm:w-6 text-brand-gold" />
             </div>
-            <span className="font-serif font-bold text-xl tracking-wide">
+            <span className="font-serif font-bold text-base sm:text-lg lg:text-xl tracking-wide whitespace-nowrap">
               {get(t.nav.brandName, lang)}
             </span>
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer ${
+                className={`px-2.5 py-1.5 xl:px-3 xl:py-2 rounded-full text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap transition-all duration-200 cursor-pointer ${
                   activeSection === item.id
                     ? scrolled
                       ? 'bg-brand-gold text-brand-emerald font-semibold shadow-md'
@@ -111,18 +111,18 @@ export default function Navbar() {
             ))}
 
             {/* Language Switcher */}
-            <div className="relative ml-3" ref={langRef}>
+            <div className="relative ml-2" ref={langRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 aria-label="Select Language"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold hover:bg-brand-gold/30 transition-all text-sm font-bold"
+                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold hover:bg-brand-gold/30 transition-all text-xs xl:text-sm font-bold whitespace-nowrap"
               >
                 🌐 <span>{currentLang.label}</span>
                 <ChevronDown className={`h-3 w-3 transition-transform ${langOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {langOpen && (
-                <div className="absolute right-0 mt-2 w-40 bg-brand-emerald border border-white/15 rounded-2xl shadow-2xl overflow-hidden">
+                <div className="absolute right-0 mt-2 w-40 bg-emerald-950 border border-white/15 rounded-2xl shadow-2xl overflow-hidden z-50">
                   {LANGUAGES.map((l) => (
                     <button
                       key={l.code}

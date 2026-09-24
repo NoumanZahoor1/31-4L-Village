@@ -6,15 +6,15 @@ export const t = {
   // ── Navbar ────────────────────────────────────────────────────────────────────
   nav: {
     home:      { en: 'Home',              ur: 'ہوم' },
-    about:     { en: 'About & History',   ur: 'تاریخ' },
-    culture:   { en: 'Culture & Lifestyle', ur: 'ثقافت' },
-    landmarks: { en: 'Landmarks',         ur: 'مشہور مقامات' },
-    directory: { en: 'Famous Personalities', ur: 'مشہور شخصیات' },
-    news:      { en: 'Announcements',     ur: 'اعلانات' },
-    gallery:    { en: 'Gallery',       ur: 'گیلری' },
-    developers: { en: 'Developers',   ur: 'ڈویلپرز' },
-    contact:    { en: 'Contact Us',   ur: 'رابطہ کریں' },
-    brandName:  { en: 'Chak 31/4L', ur: 'چک ۳۱ ایف ایل' },
+    about:     { en: 'About',             ur: 'تاریخ' },
+    culture:   { en: 'Culture',           ur: 'ثقافت' },
+    landmarks: { en: 'Landmarks',         ur: 'مقامات' },
+    directory: { en: 'Directory',         ur: 'شخصیات' },
+    news:      { en: 'News',              ur: 'اعلانات' },
+    gallery:    { en: 'Gallery',          ur: 'گیلری' },
+    developers: { en: 'Developers',       ur: 'ڈویلپرز' },
+    contact:    { en: 'Contact',          ur: 'رابطہ' },
+    brandName:  { en: 'Chak 31/4L',       ur: 'چک ۳۱ ایف ایل' },
   },
 
   // ── Hero ──────────────────────────────────────────────────────────────────────
@@ -211,27 +211,26 @@ export const t = {
     news: [
       {
         id: 1,
-        title: { en: 'Annual Kabaddi Cup Schedule Announced', ur: 'سالانہ کبڈی کپ کا شیڈول جاری' },
-        date: { en: 'July 28, 2026', ur: '۲۸ جولائی ۲۰۲۶ء' },
-        tag: { en: 'Sports', ur: 'کھیل' },
-        excerpt: { en: 'The local sports committee has finalized standard rules and schedule for the upcoming Monsoon Kabaddi Cup starting early next month.', ur: 'مقامی اسپورٹس کمیٹی نے آئندہ ماہ سے شروع ہونے والے مون سون کبڈی کپ کے لیے قواعد و ضوابط اور شیڈول کو حتمی شکل دے دی ہے۔' },
-        content: { en: 'We are excited to host 8 teams from surrounding villages for a three-day tournament. Matches will start at 4:30 PM daily at the village sand court.', ur: 'ہمیں تین روزہ ٹورنامنٹ کے لیے آس پاس کے دیہات کی ۸ ٹیموں کی میزبانی پر خوشی ہے۔ میچ روزانہ شام ۴:۳۰ بجے چوک کی ریتلی گراؤنڈ میں شروع ہوں گے۔' }
-      },
-      {
-        id: 2,
-        title: { en: 'Free Healthcare & Eye Care Camp', ur: 'مفت طبی و آنکھوں کا کیمپ' },
-        date: { en: 'July 22, 2026', ur: '۲۲ جولائی ۲۰۲۶ء' },
-        tag: { en: 'Welfare', ur: 'فلاح و بہبود' },
-        excerpt: { en: 'A free medical camp will be set up at the Government Primary School by Okara Welfare Society on upcoming Sunday.', ur: 'اوکاڑہ ویلفیئر سوسائٹی کے زیر اہتمام آئندہ اتوار کو گورنمنٹ پرائمری سکول میں مفت میڈیکل کیمپ لگایا جائے گا۔' },
-        content: { en: 'Residents can access free consultations from certified pediatricians, cardiologists, and eye specialists. Free medicines and eye testing will be provided.', ur: 'رہائشی بچوں، دل اور آنکھوں کے ماہر ڈاکٹروں سے مفت مشورہ حاصل کر سکتے ہیں۔ مفت ادویات اور نظر کے چشمے بھی فراہم کیے جائیں گے۔' }
-      },
-      {
-        id: 3,
-        title: { en: 'Sewerage Pipe Network Expansion Approved', ur: 'سیوریج پائپ نیٹ ورک کی توسیع منظور' },
-        date: { en: 'July 15, 2026', ur: '۱۵ جولائی ۲۰۲۶ء' },
-        tag: { en: 'Development', ur: 'ترقی' },
-        excerpt: { en: 'The District Council has approved budget for extending the paved sewerage canal network to the southern sector of Chak 31/4L.', ur: 'ڈسٹرکٹ کونسل نے چک ۳۱ ایف ایل کے جنوبی سیکٹر تک سیوریج پائپ لائن کی توسیع کے لیے بجٹ منظور کر لیا ہے۔' },
-        content: { en: 'The local councilors confirmed that work will commence within two weeks. This project will resolve water logging issues during monsoon rainstorms.', ur: 'مقامی کونسلروں نے تصدیق کی کہ دو ہفتوں میں کام شروع ہو جائے گا۔ یہ منصوبہ مون سون کے دوران گلیوں میں پانی جمع ہونے کا مسئلہ حل کرے گا۔' }
+        title: { 
+          en: 'Grand Volleyball Match: Pera Club vs Godha Club', 
+          ur: 'والی بال کا بڑا مقابلہ: پیرا کلب بمقابلہ گوڈھا کلب' 
+        },
+        date: { 
+          en: 'October 13, 2026 at 9:00 PM', 
+          ur: '۱۳ اکتوبر ۲۰۲۶ء شب ۹:۰۰ بجے' 
+        },
+        tag: { 
+          en: 'Sports', 
+          ur: 'کھیل' 
+        },
+        excerpt: { 
+          en: 'High-voltage Volleyball match between Pera Club and Godha Club on October 13, 2026 (9:00 PM) at Venue: 31/4L Kori Balocha.', 
+          ur: 'پیرا کلب بمقابلہ گوڈھا کلب والی بال کا شاندار میچ ۱۳ اکتوبر ۲۰۲۶ء کو رات ۹ بجے بمقام چک ۳۱ ایف ایل کوڑی بلوچاں میں کھیلا جائے گا۔' 
+        },
+        content: { 
+          en: 'Get ready for a grand Volleyball showdown in Chak 31/4L Kori Balocha! Pera Club will face off against Godha Club in a highly anticipated night match on October 13, 2026 starting at 9:00 PM sharp. Venue: 31/4L Kori Balocha. All sports lovers and village residents are cordially invited to attend and cheer for their favorite team!', 
+          ur: 'چک ۳۱ ایف ایل کوڑی بلوچاں میں والی بال کے زبردست مقابلے کا انعقاد! پیرا کلب اور گوڈھا کلب کے درمیان ۱۳ اکتوبر ۲۰۲۶ء کو رات ۹:۰۰ بجے شاندار نائٹ میچ کھیلا جائے گا۔ بمقام: ۳۱ ایف ایل کوڑی بلوچاں۔ تمام کھیل کے شوقین اور اہل دیہات کو شرکت اور حوصلہ افزائی کی پرخلوص دعوت دی جاتی ہے۔' 
+        }
       }
     ],
     gallery: [

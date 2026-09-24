@@ -1,17 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 /**
- * Sunrise-over-fields preloader for Chak 31/4L — Performance-Optimized
+ * Sunrise-over-fields preloader for Chak 31/4L
  *
- * Optimizations vs. original:
- *   - 1200ms duration (was 2400ms) — halved total screen time
- *   - once=true by default — only first visit per session
- *   - Improved bot detection (catches DevTools Lighthouse too)
- *   - 40 back + 25 front wheat stalks (was 90 + 60) — 57% fewer DOM nodes
- *   - 12 stars (was 36)
- *   - No @import for font (already loaded async in index.html)
- *   - Progress bar uses transform:scaleX (GPU-composited, no layout thrash)
- *   - Lift animation 600ms (was 1200ms), hold 200ms (was 450ms)
+ * - 2800ms minimum duration — beautiful & noticeable
+ * - Shows on every fresh page load / refresh (uses navigation timing)
+ * - Skips if already shown in the same JS session (SPA nav)
+ * - Bot / Lighthouse detection included
+ * - 60 back + 40 front wheat stalks, 24 stars
+ * - Progress bar uses transform:scaleX (GPU-composited)
+ * - Hold 400ms then lift 800ms for dramatic cinematic exit
  */
 
 function makeRandom(seed) {
@@ -76,21 +74,30 @@ function Wheat({ stalks, color, width }) {
   );
 }
 
-export default function Preloader({ minDuration = 1200, once = true, onDone }) {
+// Module-level flag: true only if this JS bundle has already run the preloader
+// in the current JS session (i.e. SPA client-side navigation). Resets on full reload.
+let _shownThisSession = false;
+
+export default function Preloader({ minDuration = 2800, onDone }) {
   const [skip] = useState(() => {
     try {
-      // Skip for all bots and audit tools (including DevTools Lighthouse)
+      // Skip for bots and audit tools
       if (typeof navigator !== 'undefined') {
         const ua = navigator.userAgent;
         if (/Lighthouse|PageSpeed|Googlebot|HeadlessChrome|Chrome-Lighthouse|PTST|GTmetrix/i.test(ua)) {
           return true;
         }
-        // DevTools Lighthouse runs as regular Chrome but with special flags
         if (typeof window !== 'undefined' && window.__lighthouseMarker) {
           return true;
         }
       }
-      return once && sessionStorage.getItem("preloaded") === "1";
+      // Always show on a real fresh page load / browser refresh
+      // performance.navigation.type === 0 = normal, 1 = reload, 2 = back/forward
+      const isHardLoad = typeof performance !== 'undefined' &&
+        performance.getEntriesByType?.('navigation')?.[0]?.type !== 'navigate' ||
+        !_shownThisSession;
+      if (_shownThisSession) return true;   // skip within same SPA session
+      return false;                          // show on fresh load / reload
     } catch {
       return false;
     }
@@ -102,27 +109,32 @@ export default function Preloader({ minDuration = 1200, once = true, onDone }) {
   const onDoneRef = useRef(onDone);
   onDoneRef.current = onDone;
 
-  // Reduced counts: 40 back (was 90), 25 front (was 60)
+  // Rich wheat field: 60 back + 40 front stalks
   const backWheat = useMemo(
-    () => buildWheat({ count: 40, seed: 7, minH: 38, maxH: 70, baseMin: 318, baseMax: 345 }),
+    () => buildWheat({ count: 60, seed: 7, minH: 38, maxH: 70, baseMin: 318, baseMax: 345 }),
     []
   );
   const frontWheat = useMemo(
-    () => buildWheat({ count: 25, seed: 21, minH: 60, maxH: 105, baseMin: 350, baseMax: 392 }),
+    () => buildWheat({ count: 40, seed: 21, minH: 60, maxH: 105, baseMin: 350, baseMax: 392 }),
     []
   );
-  // Reduced stars: 12 (was 36)
+  // 24 twinkling stars
   const stars = useMemo(() => {
     const r = makeRandom(99);
-    return Array.from({ length: 12 }, () => ({
+    return Array.from({ length: 24 }, () => ({
       left: r() * 100,
       top: r() * 45,
-      size: 1 + r() * 2,
+      size: 1 + r() * 2.5,
       delay: r() * 3,
     }));
   }, []);
 
-  // 1. Wait for the page (window load + fonts), with a 4s safety net (was 8s)
+  // 1. Mark session shown immediately so SPA navigations skip it
+  useEffect(() => {
+    if (!skip) _shownThisSession = true;
+  }, [skip]);
+
+  // 2. Wait for the page (window load + fonts), with a 6s safety net
   useEffect(() => {
     if (skip) return;
     const markReady = () => (pageReady.current = true);
@@ -134,11 +146,11 @@ export default function Preloader({ minDuration = 1200, once = true, onDone }) {
     const fontsDone = document.fonts?.ready ?? Promise.resolve();
     Promise.all([loadDone, fontsDone]).then(markReady);
 
-    const safety = setTimeout(markReady, 4000);
+    const safety = setTimeout(markReady, 6000);
     return () => clearTimeout(safety);
   }, [skip]);
 
-  // 2. Drive the progress
+  // 3. Drive the progress bar
   useEffect(() => {
     if (skip || phase !== "loading") return;
     let raf;
@@ -165,23 +177,20 @@ export default function Preloader({ minDuration = 1200, once = true, onDone }) {
     };
   }, [skip, phase, minDuration]);
 
-  // 3. At 100%, hold briefly then lift (200ms, was 450ms)
+  // 4. At 100%, hold 400ms so the filled bar is visible, then start lift
   useEffect(() => {
     if (phase !== "loading" || progress < 100) return;
-    const t = setTimeout(() => setPhase("lift"), 200);
+    const t = setTimeout(() => setPhase("lift"), 400);
     return () => clearTimeout(t);
   }, [phase, progress]);
 
-  // 4. After the lift, remove overlay (600ms, was 1200ms)
+  // 5. Cinematic 800ms lift-off, then remove overlay
   useEffect(() => {
     if (phase !== "lift") return;
     const t = setTimeout(() => {
       setPhase("done");
-      try {
-        sessionStorage.setItem("preloaded", "1");
-      } catch {}
       onDoneRef.current?.();
-    }, 600);
+    }, 800);
     return () => clearTimeout(t);
   }, [phase]);
 
@@ -207,10 +216,10 @@ export default function Preloader({ minDuration = 1200, once = true, onDone }) {
       aria-label="Loading Chak 31/4L"
       className="fixed inset-0 z-[9999] overflow-hidden bg-[#04140b]"
       style={{
-        transition: 'transform 600ms cubic-bezier(0.76,0,0.24,1), border-radius 600ms cubic-bezier(0.76,0,0.24,1)',
+        transition: 'transform 800ms cubic-bezier(0.76,0,0.24,1), border-radius 800ms cubic-bezier(0.76,0,0.24,1)',
         transform: lifting ? "translateY(-100%)" : "translateY(0)",
-        borderBottomLeftRadius: lifting ? "50% 12vh" : 0,
-        borderBottomRightRadius: lifting ? "50% 12vh" : 0,
+        borderBottomLeftRadius: lifting ? "50% 14vh" : 0,
+        borderBottomRightRadius: lifting ? "50% 14vh" : 0,
       }}
     >
       <style>{`

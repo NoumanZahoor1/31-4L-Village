@@ -202,27 +202,11 @@ export const localDirectory = [
 export const communityNews = [
   {
     id: 1,
-    title: "Annual Kabaddi Cup Schedule Announced",
-    date: "July 28, 2026",
+    title: "Grand Volleyball Match: Pera Club vs Godha Club",
+    date: "October 13, 2026 at 9:00 PM",
     tag: "Sports",
-    excerpt: "The local sports committee has finalized standard rules and schedule for the upcoming Monsoon Kabaddi Cup starting early next month.",
-    content: "We are excited to host 8 teams from surrounding villages for a three-day tournament. The prize pool includes a cash prize and a local breed calf for the tournament's best player (Man of the Match). Matches will start at 4:30 PM daily at the village sand court."
-  },
-  {
-    id: 2,
-    title: "Free Healthcare & Eye Care Camp",
-    date: "July 22, 2026",
-    tag: "Welfare",
-    excerpt: "A free medical camp will be set up at the Government Primary School by Okara Welfare Society on upcoming Sunday.",
-    content: "Residents can access free consultations from certified pediatricians, cardiologists, and eye specialists. Free medicines, glucose checks, and eye testing with complimentary prescription glasses will be distributed."
-  },
-  {
-    id: 3,
-    title: "Sewerage Pipe Network Expansion Approved",
-    date: "July 15, 2026",
-    tag: "Development",
-    excerpt: "The District Council has approved budget for extending the paved sewerage canal network to the southern sector of Chak 31/4L.",
-    content: "The local councilors confirmed that work will commence within two weeks. This project will resolve water logging issues in the street lanes during monsoon rainstorms."
+    excerpt: "High-voltage Volleyball match between Pera Club and Godha Club on October 13, 2026 (9:00 PM) at 31/4L Kori Balocha.",
+    content: "Get ready for a grand Volleyball showdown in Chak 31/4L Kori Balocha! Pera Club will face off against Godha Club in a highly anticipated night match on October 13, 2026 starting at 9:00 PM sharp. Venue: 31/4L Kori Balocha. All sports lovers and village residents are cordially invited to attend and cheer for their favorite team!"
   }
 ];
 
